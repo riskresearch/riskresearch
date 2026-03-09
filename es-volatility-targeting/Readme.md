@@ -13,6 +13,8 @@ For the moment, this folder contains two working files:
 - `NegVolDirection - Python Backtest.ipynb`  
   Research notebook used to study the strategy logic and evaluate its historical behavior.
 
+- `VIXDirection - Python Backtest.ipynb`  
+  Research notebook used to study the VIX-based volatility-targeting variant and compare its behavior with the downside-volatility approach.
 - `NegVolDirection - MT5 Deployment.ipynb`  
   Notebook used to connect with MetaTrader 5 and monitor the live account implementation.
 
