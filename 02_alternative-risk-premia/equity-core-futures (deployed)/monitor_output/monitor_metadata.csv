@@ -1,0 +1,2 @@
+run_timestamp,account_login,strategy_start_used,strategy_start_source,performance_quality,state_file_present,positions_count,deals_count,orders_count,gross_exposure,state_csv_path,output_dir
+2026-04-08 17:47:38.736012,******6156,2026-04-05,manual_inception_date,provisional,False,3,24,0,0.839310283425455,C:\Users\Juanan\Downloads\riskresearch\02_alternative-risk-premia\equity-core-futures (deployed)\allocator_state_latest.csv,C:\Users\Juanan\Downloads\riskresearch\02_alternative-risk-premia\equity-core-futures (deployed)\monitor_output
