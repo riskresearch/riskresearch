@@ -13,7 +13,6 @@ The project is organized around a simple principle: in competitive markets, stro
 The repository currently revolves around several related themes:
 
 - **research framework**, where the methodological foundations of the work are developed
-- **equity volatility targeting**, focused on risk-managed exposure to the equity market through futures
-- **alternative risk premia**, focused on systematic return sources such as trend, term structure, volatility, and momentum
+- **alternative risk premia**, focused on systematic return sources such as equity core, trend, term structure, volatility, and momentum
 
 Together, these areas reflect a common objective: understanding how market exposure, diversification, and systematic rules can be combined in a disciplined way.

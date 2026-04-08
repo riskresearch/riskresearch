@@ -1,0 +1,9 @@
+name,status,detail
+performance_series_quality,WARNING,Performance series quality is provisional. Source is not full daily marked-to-market NAV.
+strategy_start_source,OK,Strategy start source: manual_inception_date
+state_file_present,WARNING,EA state export not found or empty. Target-vs-actual certification is limited.
+unexpected_symbols_held,OK,All open symbols belong to expected families.
+target_vs_actual_lots,WARNING,Lots-gap check skipped because implementation state is incomplete.
+target_vs_actual_notional,WARNING,Notional-gap check skipped because implementation state is incomplete.
+long_only_constraint,OK,Long-only constraint respected.
+equity_positive,OK,Account equity positive: 968258.00
