@@ -15,7 +15,7 @@ The framework draws on work from Fama, Cochrane, Campbell and Shiller, Ilmanen, 
 
 The framework is organized in seven sections that build on each other.
 
-**Section 1** establishes what a market price actually is — the clearing level at which buyers and sellers exchange risk — and why the gap between price, value, and expectations is the central object of investment analysis rather than a peripheral concern.
+**Section 1** establishes what a market price actually is — the clearing level at which buyers and sellers exchange risk — and why the gap between price, value, and expectations is the central object of investment analysis rather than a secondary one.
 
 **Section 2** examines how speculative dynamics can drive prices well beyond what fundamentals support, why informed investors participate anyway, and why identifying excess is easier than trading it profitably.
 
@@ -23,7 +23,7 @@ The framework is organized in seven sections that build on each other.
 
 **Section 4** develops a taxonomy of return sources — market beta, systematic factor premia, and alpha — and connects it to the modern portfolio methods that attempt to harvest those sources more deliberately, including factor investing, smart beta, risk budgeting, and risk parity.
 
-**Section 5** addresses portfolio construction directly: how exposures should be sized and combined, why diversification is a structural property rather than a count, why correlation rises in stress when it matters most, and why the path of returns is as important as their terminal level.
+**Section 5** addresses portfolio construction directly: how exposures should be sized and combined, why diversification is a structural property rather than a position count, why correlation rises in stress when it matters most, and why the path of returns is as important as their terminal level.
 
 **Section 6** grounds expected return estimation in observable arithmetic — starting valuation, current carry, and regime conditioning — rather than in historical averages or narrative optimism, and explains what the most common forecasting errors have in common.
 
@@ -39,4 +39,4 @@ The purpose of maintaining both documents together is to make the connection bet
 
 All citations refer to academic papers, working papers, or practitioner research that are publicly available or widely accessible through standard academic channels. Where a paper is cited in support of a specific empirical claim, the reader is encouraged to consult the original source. The framework uses the literature selectively — to support load-bearing claims rather than to demonstrate familiarity with it.
 
-Charts throughout the sections are drawn from publicly available data sources including the Ken French Data Library, Robert Shiller's data series, FRED, Yahoo Finance, and S&P Dow Jones Indices publications. Data sources and construction methodology are noted in each caption. A small number of propositions remain as clearly marked placeholders where the required data requires either the connected strategy's live outputs or constituent-level datasets that are not yet available. These are identified explicitly and will be populated as the strategy analysis layer is completed.
+Charts throughout the sections are drawn from publicly available data sources including the Ken French Data Library, Robert Shiller's data series, FRED, Yahoo Finance, and S&P Dow Jones Indices publications. Data sources and construction methodology are noted in each caption. Several chart propositions remain as clearly marked placeholders. These require either live strategy outputs or proprietary constituent-level datasets that are not yet available. They are identified explicitly in each section and will be populated as the strategy analysis is completed.
