@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7. From core allocation to active programs – RR Strategy Research</title>
+<title>6. From core allocation to active programs – RR Strategy Research</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -174,7 +174,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">7. From core allocation to active programs</h1>
+<h1 class="title">6. From core allocation to active programs</h1>
 </div>
 
 
@@ -208,7 +208,7 @@ div.csl-indent {
 <p>The third question is what macro relationships the core implicitly depends on. A traditional 60/40 portfolio depends on the stock-bond correlation remaining negative, on inflation remaining contained enough that duration hedges equity stress, and on the equity risk premium remaining positive. When all three assumptions held — as they did through most of 1985–2020 — the structure performed well and its dependencies were invisible. When the inflation assumption broke in 2021 and 2022, bonds and equities fell simultaneously, and the diversification that had appeared structural proved to be regime-conditional. A core that had answered this question honestly would have held some inflation-sensitive exposure — commodities, TIPS, real assets, or trend-following strategies — not as a performance bet but as insurance against exactly the regime that subsequently materialized <span class="citation" data-cites="ilmanen2018">(<a href="#ref-ilmanen2018" role="doc-biblioref">Ilmanen et al., 2018</a>)</span>.</p>
 <p>The fourth question is what level of simplicity is required for the structure to be maintained consistently. Complex allocations require more monitoring, more decision-making under pressure, and more behavioral resilience than simple ones. Simplicity has genuine option value: it reduces the surface area over which errors and institutional drift can accumulate.</p>
 <p>The architecture diagram below illustrates how these principles translate into a layered portfolio structure. The passive market exposure layer carries the largest risk budget at the lowest cost and answers the strategic allocation question. Each subsequent layer requires a more demanding justification, introduces more operational complexity, and commands a higher fee. The diagram is not prescriptive — the right number of layers and the appropriate risk budget at each will differ across investors — but it makes the hierarchy visible.</p>
-<div id="d43128fd" class="cell" data-execution_count="2">
+<div id="87b10a4e" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -225,7 +225,7 @@ div.csl-indent {
 <p>The passive baseline is more demanding than is usually acknowledged. A globally diversified equity index has delivered long-run real returns of approximately 5 to 6 percent annually after inflation. A broad investment-grade bond index has delivered approximately 1 to 2 percent in real terms in normal-rate environments, and substantially more when starting yields are elevated. A simple 60/40 combination has historically produced Sharpe ratios of approximately 0.4 to 0.5 over long samples, with maximum drawdowns of 30 to 40 percent in severe episodes. This is available at 3 to 10 basis points of annual fee in the current ETF market <span class="citation" data-cites="vanguard_index">(<a href="#ref-vanguard_index" role="doc-biblioref">Vanguard, n.d.</a>)</span>.</p>
 <p>The all-in cost of active alternatives is substantially higher than the management fee alone. Bogle identified four cost layers that apply to most active portfolios: the management fee, transaction costs from higher turnover, the tax drag from realizing gains more frequently, and the advisory, due diligence, and monitoring burden that accompanies active mandates <span class="citation" data-cites="bogle2018">(<a href="#ref-bogle2018" role="doc-biblioref">Bogle, 2018</a>)</span>. When all four are included, the effective annual cost of a typical active equity mandate is not 80 basis points but often 150 basis points or more. For a hedge fund structure with a 1.5 percent management fee and a 20 percent performance allocation, the effective all-in cost can reach 300 to 400 basis points in good years, with the asymmetry of the performance fee working systematically against the investor.</p>
 <p>This cost structure sets a specific hurdle. The chart below shows what fee drag compounding means over 20 years, assuming 7 percent gross annual return across all strategies. The passive index at 5 basis points is the baseline. An active equity fund at 80 basis points leaves the investor with approximately 15 percent less wealth after 20 years. A hedge fund at 150 basis points leaves approximately 25 percent less. These are not marginal differences — they are the dominant driver of long-run return outcomes once compound interest is applied to the fee gap. The gross alpha required to break even against the passive baseline is therefore not 80 basis points — it is 75 basis points of persistent annual outperformance above the benchmark just to match net returns, before any adjustment for the additional risk the active portfolio may be taking.</p>
-<div id="382f703a" class="cell" data-execution_count="3">
+<div id="ebc25a19" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -245,7 +245,7 @@ div.csl-indent {
 <p>The third is capital efficiency — expressing a view through instruments that use less balance-sheet capital, freeing the remainder for other exposures. Futures overlays, derivatives-based tail protection, and currency hedges all belong to this category when properly structured.</p>
 <p>The fourth is downside protection — reducing the portfolio’s exposure to a specific risk the core carries too heavily. These additions will often cost carry in calm regimes and pay substantially in stress. The justification is asymmetric: they are not there to improve average return but to improve survivability in the scenarios that are most damaging.</p>
 <p>The table below summarizes these four justifications alongside the evidence required for each, the typical cost structure, and the specific failure mode that most commonly undermines each rationale in practice. The failure mode column is as important as the justification column — each rationale has a characteristic way of disappointing, and understanding those failure modes in advance is what makes the evaluation honest rather than optimistic.</p>
-<div id="4b1a1e0f" class="cell" data-execution_count="4">
+<div id="dd593f52" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -263,7 +263,7 @@ div.csl-indent {
 <p>The second is benchmark mismatch. Active programs evaluated against a benchmark that does not reflect their actual return source will be either incorrectly retained or incorrectly terminated. A trend-following strategy evaluated against a fixed-income benchmark will look poor in trending equity markets even when it is performing its intended function. The solution is to set the evaluation benchmark before the strategy is allocated capital, not after it has already underperformed.</p>
 <p>The third is regime misjudgment at the core level. An investor who built a passive equity-bond core through 2019 and added a carry strategy as a diversifier discovered in 2020 that the carry strategy performed poorly in exactly the global risk-off episode that also damaged the core. The carry strategy was not misdesigned. The problem was that the core was not diversified against the regime in which both the core and the sleeve failed simultaneously. No amount of careful active sleeve management repairs a structural failure at the core level. This is why the four questions a core must answer — especially the question about which macro relationships it depends on — matter more than any subsequent active addition.</p>
 <p>The fourth and most common failure mode is behavioral. The chart below shows value factor performance alongside the broader market from 2013 to 2022. Value underperformed growth severely from 2017 through early 2021 — a period of approximately four years during which the factor strategy was analytically intact but experientially very difficult to hold. Many institutional allocators reduced or eliminated their value factor exposure near the trough, precisely when the subsequent partial recovery would have rewarded patience. The factor did not fail. The ability to maintain conviction through an extended period of underperformance failed.</p>
-<div id="72620740" class="cell" data-execution_count="5">
+<div id="ccdcc2e8" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

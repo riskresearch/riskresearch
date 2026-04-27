@@ -1,5 +1,5 @@
 ---
-title: "7. From core allocation to active programs"
+title: "6. From core allocation to active programs"
 ---
 
 ```{python}

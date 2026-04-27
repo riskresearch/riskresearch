@@ -1,5 +1,5 @@
 ---
-title: "4. Return sources, factor structure, and the anatomy of a portfolio"
+title: "3. Return sources, factor structure, and the anatomy of a portfolio"
 ---
 
 ```{python}

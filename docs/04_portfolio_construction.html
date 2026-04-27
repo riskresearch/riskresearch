@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5. Portfolio construction, diversification, and risk – RR Strategy Research</title>
+<title>4. Portfolio construction, diversification, and risk – RR Strategy Research</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -174,7 +174,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5. Portfolio construction, diversification, and risk</h1>
+<h1 class="title">4. Portfolio construction, diversification, and risk</h1>
 </div>
 
 
@@ -204,7 +204,7 @@ div.csl-indent {
 <p>Correlation is the most widely used input in portfolio construction and also one of the most frequently misused. The limitation is not statistical precision — it is that correlation is backward-looking by construction and regime-dependent in ways that matter most precisely when investors are most reliant on it.</p>
 <p>Correlation summarizes co-movement over a chosen historical period. It does not explain why that co-movement occurred, whether the same forces will persist, or how the relationship will behave in environments that differ from the sample. Two assets may appear uncorrelated across a long history because they responded to different shocks during the measurement window, not because their underlying drivers are structurally independent. A new shock that affects both simultaneously — an inflation surge, a liquidity crisis, a sharp rise in discount rates — can tighten correlations rapidly across assets that previously appeared diversifying.</p>
 <p>The more fundamental problem is that correlations tend to rise in stress periods — exactly when investors are most dependent on diversification holding. In calm markets, idiosyncratic return drivers, differences in carry, and microstructure noise can keep assets separated. In stress, the dominant driver often becomes broad deleveraging: forced selling, margin calls, redemptions, and the withdrawal of liquidity, which affects nearly all risk assets simultaneously. The chart below demonstrates this empirically using the Fama-French market factor and bond and credit returns from 1990 to 2023. For both equity-bond and equity-credit pairs, the correlation in stress periods — defined as the top quartile of rolling equity volatility — is substantially higher than in calm periods. The equity-credit correlation in particular moves from mildly positive in calm periods to strongly positive in stress, confirming that high-yield credit provides much less diversification than its investment-grade label might imply when it is most needed.</p>
-<div id="fd5dde36" class="cell" data-execution_count="2">
+<div id="57fa1565" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -223,7 +223,7 @@ div.csl-indent {
 <p>Several frameworks exist for thinking about position sizing rigorously. Kelly-criterion-based approaches size positions in proportion to the ratio of expected edge to variance, maximizing long-run compound growth — but they are extremely sensitive to estimation error and produce sizes that are too aggressive for most institutional constraints <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp, 2006</a>)</span>. Mean-variance optimization provides a theoretically optimal size for a given set of return and covariance estimates, but it is similarly sensitive to input error and tends to concentrate the entire portfolio in a small number of assets when inputs are uncertain — a problem known as corner solutions <span class="citation" data-cites="markowitz1952">(<a href="#ref-markowitz1952" role="doc-biblioref">Markowitz, 1952</a>)</span>.</p>
 <p>In practice, thoughtful portfolio construction involves a pragmatic combination: a base sizing framework that reflects conviction and factor contribution, modified by explicit constraints on maximum position size, maximum factor concentration, and minimum liquidity buffer. What distinguishes a well-constructed portfolio from a poorly constructed one is not which framework is used but whether the sizing decisions are made explicitly, with awareness of how wrong they could be, rather than implicitly as a residual of the selection process.</p>
 <p>The table below makes the sizing decision concrete. For a given strategy with known volatility and a win-loss ratio of 1.5 — meaning winning positions are on average 50 percent larger than losing ones — the required hit rate to be profitable is fixed regardless of position size. What changes with size is the portfolio volatility contribution and the position-level loss required to breach a 2-standard-deviation portfolio event. These numbers show why a position that is analytically identical can be acceptable at 2 percent and damaging at 15 percent.</p>
-<div id="b3d881d6" class="cell" data-execution_count="3">
+<div id="622fb15d" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -241,7 +241,7 @@ div.csl-indent {
 <p>Volatility measures the dispersion of outcomes around an average. Drawdown measures the lived experience of loss — the peak-to-trough decline and the duration for which capital is below its previous high. For most investors, drawdown is the more practically relevant risk. A portfolio with moderate volatility but a long, grinding underwater period can be extremely difficult to hold, particularly when the recovery requires continuing to own positions that have already been painful. Ilmanen, Israel, Moskowitz, Thapar, and van den Heuvel document this empirically: across a century of drawdown episodes, strategies that appeared similar on average-return metrics differed substantially in their drawdown profiles and in the behavioral challenges they created for investors trying to maintain allocation through stress <span class="citation" data-cites="ilmanen2018">(<a href="#ref-ilmanen2018" role="doc-biblioref">Ilmanen et al., 2018</a>)</span>.</p>
 <p>The Kelly criterion literature makes a related point. At full Kelly sizing, the strategy maximizes long-run compound growth in expectation, but the variance of the path is large enough that most individual realizations fall well short of the expected compound return. Fractional Kelly — sizing at half or a third of the theoretically optimal size — sacrifices some expected return but substantially improves the practical survivability of the strategy <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp, 2006</a>)</span>. The reduction in expected return is often smaller than the reduction in drawdown severity.</p>
 <p>The chart below illustrates this using two simulated portfolios designed to have similar annualized Sharpe ratios. Portfolio A experiences a sharp but short crisis — the kind of drawdown that is painful but resolves quickly, allowing the investor to recover and continue. Portfolio B experiences a long shallow drawdown lasting several years. From a summary statistics perspective, both look similar. From a practical holding perspective, they are very different: Portfolio B tests institutional patience for a period that is long enough to trigger mandate reviews, client redemptions, and personnel changes. The probability that the portfolio is abandoned before the recovery occurs is materially higher for Portfolio B despite identical long-run statistics.</p>
-<div id="82923265" class="cell" data-execution_count="4">
+<div id="76a1ed21" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -257,7 +257,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="rebalancing-as-structural-risk-control">Rebalancing as structural risk control</h2>
 <p>A portfolio left to market drift will gradually become a different portfolio from the one that was constructed. Positions that have appreciated become larger, positions that have declined become smaller, and the factor exposures of the original design shift in ways that often increase rather than reduce concentration — because assets that have already performed strongly tend to dominate an unmanaged portfolio and often carry more demanding valuations and more crowded positioning than when they were first added.</p>
 <p>Rebalancing is the mechanism by which the intended portfolio structure is maintained against this drift. Its primary role is not to capture mean reversion — though it has historically provided a modest return contribution in certain asset class combinations. Its primary role is risk control: ensuring that the portfolio continues to express the intended exposures in the intended proportions rather than allowing market drift to silently concentrate risk in recent winners.</p>
-<div id="b74fd8ed" class="cell" data-execution_count="5">
+<div id="633ba3f4" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -273,7 +273,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="combining-signals-the-portfolio-is-stronger-than-its-parts">Combining signals: the portfolio is stronger than its parts</h2>
 <p>The portfolio construction principles above apply equally to discretionary and systematic portfolios, but the systematic context adds a dimension that deserves explicit treatment. When multiple signals or strategies are combined, the combination itself becomes a portfolio problem, and the same questions about covariance, concentration, and path risk apply at the strategy level.</p>
 <p>Many factors and signals that appear modest or marginal on a standalone basis become substantially more attractive when combined with other factors that are lowly correlated with them. The chart below shows this using the Fama-French value and momentum factors. Both HML and UMD have produced positive standalone Sharpe ratios over the full sample. But the 50/50 combination produces a Sharpe ratio that exceeds the weighted average of the two components — because the two factors are negatively correlated with each other. Momentum tends to perform worst precisely when value performs best, and vice versa. The rolling correlation panel on the right confirms that this negative relationship is persistent across most of the sample period, not a result specific to one period.</p>
-<div id="30fd33b8" class="cell" data-execution_count="6">
+<div id="2706fd35" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

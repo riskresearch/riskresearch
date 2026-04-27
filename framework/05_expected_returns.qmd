@@ -1,5 +1,5 @@
 ---
-title: "6. Expected returns: what the portfolio should earn from here"
+title: "5. Expected returns: what the portfolio should earn from here"
 ---
 
 ```{python}
