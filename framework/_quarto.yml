@@ -6,36 +6,44 @@ website:
   title: "RR Strategy Research"
   navbar:
     left:
-      - text: "Preface"
-        href: index.html
-      - text: "Framework"
-        menu:
-          - text: "1. Markets, prices, and expectations"
-            href: 01_markets_prices_expectations.html
-          - text: "2. Speculation, excess, and crowds"
-            href: 02_speculation_excess_crowds.html
-          - text: "3. Signals, forecasting, and outperformance"
-            href: 03_signals_forecasting_outperformance.html
-          - text: "4. Return sources and factor structure"
-            href: 04_return_sources_factor_structure.html
-          - text: "5. Portfolio construction"
-            href: 05_portfolio_construction.html
-          - text: "6. Expected returns"
-            href: 06_expected_returns.html
-          - text: "7. Core allocation to active programs"
-            href: 07_core_allocation_active_programs.html
+      - href: index.qmd
+        text: Home
+      - href: 01_markets_prices_expectations.qmd
+        text: "1. Markets & Prices"
+      - href: 02_speculation_excess_crowds.qmd
+        text: "2. Speculation"
+      - href: 03_signals_forecasting_outperformance.qmd
+        text: "3. Signals"
+      - href: 04_return_sources_factor_structure.qmd
+        text: "4. Return Sources"
+      - href: 05_portfolio_construction.qmd
+        text: "5. Portfolio Construction"
+      - href: 06_expected_returns.qmd
+        text: "6. Expected Returns"
+      - href: 07_core_allocation_active_programs.qmd
+        text: "7. Core Allocation"
+      - href: 08_strategy_implementation.qmd
+        text: "8. Strategy"
 
 format:
   html:
     theme: cosmo
     toc: true
-    toc-depth: 2
+    toc-depth: 3
+    toc-title: "Contents"
     number-sections: false
-    bibliography: references.bib
+    smooth-scroll: true
+    citations-hover: true
+    footnotes-hover: true
+    code-fold: true
+    fig-align: center
+    fig-width: 9
+    fig-height: 5
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 
 execute:
-  freeze: auto
   echo: false
   warning: false
-
-jupyter: python3
+  freeze: auto

@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,6 +90,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -112,43 +114,40 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Preface</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-framework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Framework</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-framework">    
-        <li>
-    <a class="dropdown-item" href="./01_markets_prices_expectations.html">
- <span class="dropdown-text">1. Markets, prices, and expectations</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./01_markets_prices_expectations.html" aria-current="page"> 
+<span class="menu-text">1. Markets &amp; Prices</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./02_speculation_excess_crowds.html">
- <span class="dropdown-text">2. Speculation, excess, and crowds</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./02_speculation_excess_crowds.html"> 
+<span class="menu-text">2. Speculation</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./03_signals_forecasting_outperformance.html">
- <span class="dropdown-text">3. Signals, forecasting, and outperformance</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./03_signals_forecasting_outperformance.html"> 
+<span class="menu-text">3. Signals</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./04_return_sources_factor_structure.html">
- <span class="dropdown-text">4. Return sources and factor structure</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./04_return_sources_factor_structure.html"> 
+<span class="menu-text">4. Return Sources</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./05_portfolio_construction.html">
- <span class="dropdown-text">5. Portfolio construction</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./05_portfolio_construction.html"> 
+<span class="menu-text">5. Portfolio Construction</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./06_expected_returns.html">
- <span class="dropdown-text">6. Expected returns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./06_expected_returns.html"> 
+<span class="menu-text">6. Expected Returns</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./07_core_allocation_active_programs.html">
- <span class="dropdown-text">7. Core allocation to active programs</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./07_core_allocation_active_programs.html"> 
+<span class="menu-text">7. Core Allocation</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./08_strategy_implementation.html"> 
+<span class="menu-text">8. Strategy</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -162,9 +161,9 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#what-a-price-actually-is" id="toc-what-a-price-actually-is" class="nav-link active" data-scroll-target="#what-a-price-actually-is">What a price actually is</a></li>
   <li><a href="#the-return-decomposition-where-realized-returns-actually-come-from" id="toc-the-return-decomposition-where-realized-returns-actually-come-from" class="nav-link" data-scroll-target="#the-return-decomposition-where-realized-returns-actually-come-from">The return decomposition: where realized returns actually come from</a></li>
   <li><a href="#where-expectations-become-decisive" id="toc-where-expectations-become-decisive" class="nav-link" data-scroll-target="#where-expectations-become-decisive">Where expectations become decisive</a></li>
@@ -196,18 +195,18 @@ div.csl-indent {
 
 
 <p>Any investment process begins with a question that is easier to state than to answer: what exactly is a market price telling us?</p>
-<p>The usual responses are each incomplete. Price is treated as a reflection of value. It is also treated as a reflection of expectations. At other times it is explained by flows, leverage, benchmark pressure, or institutional constraints. In practice it is all of these at once, and the mechanism that dominates changes with market conditions. A more productive starting point is therefore not to ask whether price is “right,” but to ask what is driving it now. That framing is closer to how serious asset-pricing research treats the problem: prices incorporate available information through competition, but they are not timeless statements of economic truth <span class="citation" data-cites="fama1970">(<a href="#ref-fama1970" role="doc-biblioref">Fama 1970</a>)</span>.</p>
+<p>The usual responses are each incomplete. Price is treated as a reflection of value. It is also treated as a reflection of expectations. At other times it is explained by flows, leverage, benchmark pressure, or institutional constraints. In practice it is all of these at once, and the mechanism that dominates changes with market conditions. A more productive starting point is therefore not to ask whether price is “right,” but to ask what is driving it now. That framing is closer to how serious asset-pricing research treats the problem: prices incorporate available information through competition, but they are not timeless statements of economic truth <span class="citation" data-cites="fama1970">(<a href="#ref-fama1970" role="doc-biblioref">Fama, 1970</a>)</span>.</p>
 <p>The distinction matters immediately because most weak investment work fails at this first step. Some analysis treats price as if it were a direct reading of value and every gap between the two as evidence of market error. Some leans on narrative and sentiment without asking what the market has already discounted. Some mistakes a good business for a good investment without addressing what is priced in. Once that confusion enters early, the rest of the process usually weakens from it.</p>
 <section id="what-a-price-actually-is" class="level2">
 <h2 class="anchored" data-anchor-id="what-a-price-actually-is">What a price actually is</h2>
-<p>Market price is the level at which buyers and sellers are currently willing to exchange risk. It reflects information, but also required return, risk appetite, financing conditions, liquidity, and balance-sheet capacity. Cochrane’s work on discount-rate variation is useful here precisely because it shows how large and persistent price movements can be driven by changes in required return rather than by any revision to expected cash flows <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane 2011</a>)</span>. That is an important practical point: a portfolio can lose significant value even when nothing changes in the underlying business, simply because the rate applied to discount those cash flows has shifted.</p>
-<p>Value is different from price. It is not directly observed; it is estimated. For an equity, the estimate depends on future cash generation, reinvestment quality, capital intensity, competitive durability, and the discount rate applied to the whole stream. For a fixed-income instrument, it involves contractual payments, inflation expectations, term structure, credit quality, and optionality. For futures and other derivatives the framing shifts again — a commodity futures contract is not a productive business, and its expected return is better understood through carry, basis, roll, inventory conditions, and hedging demand rather than through a discounted cash-flow framework <span class="citation" data-cites="gorton2007">(<a href="#ref-gorton2007" role="doc-biblioref">Gorton et al. 2007</a>)</span>. That is why the word <em>value</em> often misleads when applied uniformly across asset classes.</p>
-<p>Even within equities, valuation should not be confused with precision. A single fair value estimate hides the sensitivity of the output to unstable inputs: terminal growth, margin normalization, reinvestment rate, and discount rate. Small changes in those assumptions move the valuation materially. Good valuation work therefore makes uncertainty visible. It operates in ranges and scenario sensitivity rather than in single-point outputs presented as discovered facts <span class="citation" data-cites="damodaran2006">(<a href="#ref-damodaran2006" role="doc-biblioref">Damodaran 2006</a>)</span>.</p>
+<p>Market price is the level at which buyers and sellers are currently willing to exchange risk. It reflects information, but also required return, risk appetite, financing conditions, liquidity, and balance-sheet capacity. Cochrane’s work on discount-rate variation is useful here precisely because it shows how large and persistent price movements can be driven by changes in required return rather than by any revision to expected cash flows <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane, 2011</a>)</span>. That is an important practical point: a portfolio can lose significant value even when nothing changes in the underlying business, simply because the rate applied to discount those cash flows has shifted.</p>
+<p>Value is different from price. It is not directly observed; it is estimated. For an equity, the estimate depends on future cash generation, reinvestment quality, capital intensity, competitive durability, and the discount rate applied to the whole stream. For a fixed-income instrument, it involves contractual payments, inflation expectations, term structure, credit quality, and optionality. For futures and other derivatives the framing shifts again — a commodity futures contract is not a productive business, and its expected return is better understood through carry, basis, roll, inventory conditions, and hedging demand rather than through a discounted cash-flow framework <span class="citation" data-cites="gorton2007">(<a href="#ref-gorton2007" role="doc-biblioref">Gorton et al., 2007</a>)</span>. That is why the word <em>value</em> often misleads when applied uniformly across asset classes.</p>
+<p>Even within equities, valuation should not be confused with precision. A single fair value estimate hides the sensitivity of the output to unstable inputs: terminal growth, margin normalization, reinvestment rate, and discount rate. Small changes in those assumptions move the valuation materially. Good valuation work therefore makes uncertainty visible. It operates in ranges and scenario sensitivity rather than in single-point outputs presented as discovered facts <span class="citation" data-cites="damodaran2006">(<a href="#ref-damodaran2006" role="doc-biblioref">Damodaran, 2006</a>)</span>.</p>
 <p>A simple example makes this concrete. A company trading at 8x earnings may look obviously cheap, but the apparent cheapness dissolves quickly if earnings are cyclically elevated, if the refinancing outlook is deteriorating, or if the industry is facing structural pressure. The reverse applies equally. A company at 20x earnings may look expensive against its own history and still offer reasonable expected return if capital returns are high and durable, reinvestment opportunities are deep, and balance-sheet risk is modest. The multiple alone says very little until the assumptions beneath it are made explicit.</p>
 </section>
 <section id="the-return-decomposition-where-realized-returns-actually-come-from" class="level2">
 <h2 class="anchored" data-anchor-id="the-return-decomposition-where-realized-returns-actually-come-from">The return decomposition: where realized returns actually come from</h2>
-<p>A useful way to make this concrete is to decompose historical equity returns into their observable components. Long-run equity return can be approximated as the sum of starting dividend yield, real earnings growth per share, inflation, and the change in the valuation multiple applied by the market <span class="citation" data-cites="arnott2002">(<a href="#ref-arnott2002" role="doc-biblioref">Arnott and Bernstein 2002</a>)</span>. Each component is estimable independently, and the decomposition forces a question that narrative forecasting avoids: which element is actually doing the work?</p>
+<p>A useful way to make this concrete is to decompose historical equity returns into their observable components. Long-run equity return can be approximated as the sum of starting dividend yield, real earnings growth per share, inflation, and the change in the valuation multiple applied by the market <span class="citation" data-cites="arnott2002">(<a href="#ref-arnott2002" role="doc-biblioref">Arnott &amp; Bernstein, 2002</a>)</span>. Each component is estimable independently, and the decomposition forces a question that narrative forecasting avoids: which element is actually doing the work?</p>
 <p>The chart below applies this decomposition to the S&amp;P 500 across four major regimes. The results are instructive. In 1966–1981, total nominal returns were modest despite positive earnings growth because the valuation multiple contracted sharply as inflation rose and real discount rates increased. In 1982–1999, the exceptional returns were driven primarily by multiple expansion — the CAPE ratio rose from approximately 8x to approximately 44x — a contribution that was by definition unrepeatable from the starting conditions it produced. In 2000–2021, earnings growth was solid but multiple change was slightly negative, leaving dividend yield and inflation as the primary contributors to a more modest total return. The 2022 repricing, discussed in the following section, represents the partial reversal of the multiple expansion accumulated during the post-2008 period.</p>
 <div id="83638f35" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
@@ -223,8 +222,8 @@ div.csl-indent {
 </section>
 <section id="where-expectations-become-decisive" class="level2">
 <h2 class="anchored" data-anchor-id="where-expectations-become-decisive">Where expectations become decisive</h2>
-<p>In actual investment work, returns do not come from value in the abstract. They come from the difference between what was priced at entry and what subsequently occurs. An asset can be economically excellent and still perform poorly if the market had already discounted a stronger path. Another can be fundamentally ordinary and still produce strong returns if expectations were depressed enough at the starting point. Campbell and Shiller established the empirical version of this logic most clearly: valuation ratios contain information about long-horizon subsequent returns, largely because prices eventually adjust, not because they forecast dividend growth with any reliability <span class="citation" data-cites="campbell1998">(<a href="#ref-campbell1998" role="doc-biblioref">Campbell and Shiller 1998</a>)</span>.</p>
-<p>The earnings season dynamic illustrates this well. A company can report strong growth and still fall because the market had already priced stronger guidance, wider margins, or a more durable runway. The investor who evaluates only the absolute quality of the report, without asking what the market had already discounted, is not yet solving the relevant problem. The post-earnings-announcement drift literature adds a further layer: prices do not always adjust fully or instantly to new information, which means the relationship between news and price is mediated by expectations and by the market’s process of revision <span class="citation" data-cites="bernard1989">(<a href="#ref-bernard1989" role="doc-biblioref">Bernard and Thomas 1989</a>)</span>.</p>
+<p>In actual investment work, returns do not come from value in the abstract. They come from the difference between what was priced at entry and what subsequently occurs. An asset can be economically excellent and still perform poorly if the market had already discounted a stronger path. Another can be fundamentally ordinary and still produce strong returns if expectations were depressed enough at the starting point. Campbell and Shiller established the empirical version of this logic most clearly: valuation ratios contain information about long-horizon subsequent returns, largely because prices eventually adjust, not because they forecast dividend growth with any reliability <span class="citation" data-cites="campbell1998">(<a href="#ref-campbell1998" role="doc-biblioref">Campbell &amp; Shiller, 1998</a>)</span>.</p>
+<p>The earnings season dynamic illustrates this well. A company can report strong growth and still fall because the market had already priced stronger guidance, wider margins, or a more durable runway. The investor who evaluates only the absolute quality of the report, without asking what the market had already discounted, is not yet solving the relevant problem. The post-earnings-announcement drift literature adds a further layer: prices do not always adjust fully or instantly to new information, which means the relationship between news and price is mediated by expectations and by the market’s process of revision <span class="citation" data-cites="bernard1989">(<a href="#ref-bernard1989" role="doc-biblioref">Bernard &amp; Thomas, 1989</a>)</span>.</p>
 <p>The same logic extends to macro and cross-asset positioning. When a central bank meeting is anticipated correctly by the market, the announcement itself may produce little movement. When it deviates materially from what was priced — even if the policy is objectively modest — the move can be sharp. What drives return is the gap between expectation and realization, not the absolute quality of the news.</p>
 <p>The 2022 episode is one of the clearest recent illustrations of how severely the discount rate component can dominate realized returns even when earnings hold up. As U.S. ten-year TIPS real yields rose from approximately negative 1 percent to positive 1.5 percent over the course of the year, long-duration growth equities repriced sharply downward. The chart below shows QQQ and SPY alongside the 10-year TIPS real yield through 2021 and 2022. The inverse relationship is visible throughout the repricing: QQQ, with its higher concentration in long-duration growth businesses, fell substantially more than SPY as real yields rose, not because the underlying businesses deteriorated materially but because the discount rate applied to their future cash flows changed.</p>
 <div id="11c2f2ca" class="cell" data-execution_count="3">
@@ -237,18 +236,18 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>This pattern — price moving sharply in response to discount rate changes rather than to cash flow revisions — is exactly what Cochrane’s discount rate framework would predict <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane 2011</a>)</span>. It is also a pattern that a purely fundamental analysis, focused on earnings quality and business characteristics, would have missed entirely if it did not account for where the starting valuation and interest rate environment stood.</p>
+<p>This pattern — price moving sharply in response to discount rate changes rather than to cash flow revisions — is exactly what Cochrane’s discount rate framework would predict <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane, 2011</a>)</span>. It is also a pattern that a purely fundamental analysis, focused on earnings quality and business characteristics, would have missed entirely if it did not account for where the starting valuation and interest rate environment stood.</p>
 </section>
 <section id="how-prices-drift-from-value-the-social-dimension" class="level2">
 <h2 class="anchored" data-anchor-id="how-prices-drift-from-value-the-social-dimension">How prices drift from value: the social dimension</h2>
 <p>Price formation is not purely a mechanical aggregation of independent judgments. It happens inside a social process in which investors observe each other, compare themselves to benchmarks, face redemption pressure, and respond to shared narratives. This matters practically because it means prices can drift from fundamental value not only through information gaps but through the dynamics of how market participants interact.</p>
-<p>When a popular theme continues working, the cost of staying outside it is not only financial — it is institutional. Underperforming a rising market is experienced as active failure, visible to clients and peers. This creates pressure to participate that operates independently of whether the fundamental thesis justifies entry at the current price. The consequence is that prices can remain elevated well beyond what any individual investor believes is warranted, simply because the cost of resisting is too high relative to the cost of joining. Greenwood and Shleifer documented this pattern directly using survey evidence: investor return expectations are extrapolative, rising when prices have risen and falling after prices have fallen — approximately the opposite of what rational risk-averse pricing would prescribe <span class="citation" data-cites="greenwood2014">(<a href="#ref-greenwood2014" role="doc-biblioref">Greenwood and Shleifer 2014</a>)</span>.</p>
+<p>When a popular theme continues working, the cost of staying outside it is not only financial — it is institutional. Underperforming a rising market is experienced as active failure, visible to clients and peers. This creates pressure to participate that operates independently of whether the fundamental thesis justifies entry at the current price. The consequence is that prices can remain elevated well beyond what any individual investor believes is warranted, simply because the cost of resisting is too high relative to the cost of joining. Greenwood and Shleifer documented this pattern directly using survey evidence: investor return expectations are extrapolative, rising when prices have risen and falling after prices have fallen — approximately the opposite of what rational risk-averse pricing would prescribe <span class="citation" data-cites="greenwood2014">(<a href="#ref-greenwood2014" role="doc-biblioref">Greenwood &amp; Shleifer, 2014</a>)</span>.</p>
 <p>Knowing what a price should be is often less useful than understanding why it is where it is — and what would have to change for it to move. That is the question crowd dynamics, examined in section 2, consistently complicate.</p>
 </section>
 <section id="where-investment-analysis-usually-breaks-down" class="level2">
 <h2 class="anchored" data-anchor-id="where-investment-analysis-usually-breaks-down">Where investment analysis usually breaks down</h2>
 <p>Most investment work fails in one of two ways. The first is to rely too heavily on valuation. The second is to rely too heavily on narrative.</p>
-<p>Valuation is necessary but often insufficient as a near-term guide. Cheap assets can remain cheap for extended periods when the market is focused on a risk that a normalized earnings framework does not capture — refinancing conditions, regulatory change, balance-sheet fragility, or the simple absence of a catalyst. The long-horizon evidence supports the idea that starting valuation matters for subsequent returns, but that is very different from saying valuation provides a clean short-run timing signal. This is the central lesson of Campbell and Shiller’s work on the cyclically adjusted price-to-earnings ratio — CAPE, defined as the current price divided by the ten-year average of real earnings: the correlation between CAPE and ten-year subsequent returns is informative at long horizons but nearly useless at short ones <span class="citation" data-cites="campbell1998">(<a href="#ref-campbell1998" role="doc-biblioref">Campbell and Shiller 1998</a>)</span>.</p>
+<p>Valuation is necessary but often insufficient as a near-term guide. Cheap assets can remain cheap for extended periods when the market is focused on a risk that a normalized earnings framework does not capture — refinancing conditions, regulatory change, balance-sheet fragility, or the simple absence of a catalyst. The long-horizon evidence supports the idea that starting valuation matters for subsequent returns, but that is very different from saying valuation provides a clean short-run timing signal. This is the central lesson of Campbell and Shiller’s work on the cyclically adjusted price-to-earnings ratio — CAPE, defined as the current price divided by the ten-year average of real earnings: the correlation between CAPE and ten-year subsequent returns is informative at long horizons but nearly useless at short ones <span class="citation" data-cites="campbell1998">(<a href="#ref-campbell1998" role="doc-biblioref">Campbell &amp; Shiller, 1998</a>)</span>.</p>
 <p>The scatter below shows this relationship across the full historical sample. Each point represents a monthly starting observation; the horizontal axis shows the CAPE at that date; the vertical axis shows the subsequent ten-year annualized real total return. The negatively sloped OLS fit confirms the valuation logic: higher starting multiples have historically been associated with lower subsequent returns. The substantial dispersion around the fit line confirms the timing limitation: starting from a CAPE of 44x in January 2000 was associated with negative subsequent real returns over the following decade, but at any given CAPE level the range of outcomes is wide enough that valuation alone cannot be treated as a short-run timing tool.</p>
 <div id="6ce95d66" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -260,7 +259,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>The opposite failure is to lean on narrative without an economic anchor. A compelling story is too easy to construct after the fact and too difficult to invalidate in advance. Without a clear transmission mechanism — a reason why the gap between price and value should close within a relevant horizon — narrative becomes commentary rather than analysis <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane 2011</a>)</span>.</p>
+<p>The opposite failure is to lean on narrative without an economic anchor. A compelling story is too easy to construct after the fact and too difficult to invalidate in advance. Without a clear transmission mechanism — a reason why the gap between price and value should close within a relevant horizon — narrative becomes commentary rather than analysis <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane, 2011</a>)</span>.</p>
 <p>A sound investment view requires three things working together: an economic case for the asset’s prospects, a credible assessment of what the market has already discounted, and a reason why the gap between the two might matter over the horizon in question. Without all three, the investor has an opinion but not yet a complete thesis.</p>
 <p>The final chart in this section illustrates how the first element — a genuine economic case — can be present and still fail to produce returns because the second and third elements were not satisfied. European banks traded at deeply discounted price-to-book ratios throughout the 2011–2016 period. On a normalized valuation basis they appeared obviously cheap. But the market was not making an error. It was discounting a genuine set of structural problems — undercapitalization, regulatory pressure, low return on equity, and continued exposure to peripheral sovereign debt — that kept the multiple compressed despite the apparent cheapness. An investor who saw only the low multiple without asking why the market had assigned it, and whether those conditions were likely to change, would have held a position that underperformed the S&amp;P 500 by more than 100 percentage points over five years.</p>
 <div id="eb16f0e2" class="cell" data-execution_count="5">
@@ -279,30 +278,30 @@ div.csl-indent {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-arnott2002" class="csl-entry" role="listitem">
-Arnott, Robert, and Peter Bernstein. 2002. <span>“What Risk Premium Is <span>‘Normal’</span>?”</span> <em>Financial Analysts Journal</em> 58 (2): 64–85. <a href="https://www.researchaffiliates.com/content/dam/ra/publications/pdf/p-2012-jan-expected-return.pdf">https://www.researchaffiliates.com/content/dam/ra/publications/pdf/p-2012-jan-expected-return.pdf</a>.
+Arnott, R., &amp; Bernstein, P. (2002). What risk premium is <span>“normal”</span>? <em>Financial Analysts Journal</em>, <em>58</em>(2), 64–85. <a href="https://www.researchaffiliates.com/content/dam/ra/publications/pdf/p-2012-jan-expected-return.pdf">https://www.researchaffiliates.com/content/dam/ra/publications/pdf/p-2012-jan-expected-return.pdf</a>
 </div>
 <div id="ref-bernard1989" class="csl-entry" role="listitem">
-Bernard, Victor L., and Jacob K. Thomas. 1989. <span>“Post-Earnings-Announcement Drift: Delayed Price Response or Risk Premium?”</span> <em>Journal of Accounting Research</em> 27: 1–36. <a href="https://ideas.repec.org/a/bla/joares/v27y1989ip1-36.html">https://ideas.repec.org/a/bla/joares/v27y1989ip1-36.html</a>.
+Bernard, V. L., &amp; Thomas, J. K. (1989). Post-earnings-announcement drift: Delayed price response or risk premium? <em>Journal of Accounting Research</em>, <em>27</em>, 1–36. <a href="https://ideas.repec.org/a/bla/joares/v27y1989ip1-36.html">https://ideas.repec.org/a/bla/joares/v27y1989ip1-36.html</a>
 </div>
 <div id="ref-campbell1998" class="csl-entry" role="listitem">
-Campbell, John Y., and Robert J. Shiller. 1998. <span>“Valuation Ratios and the Long-Run Stock Market Outlook.”</span> <em>The Journal of Portfolio Management</em> 24 (2): 11–26. <a href="https://www.econ.yale.edu/~shiller/online/jpmalt.pdf">https://www.econ.yale.edu/~shiller/online/jpmalt.pdf</a>.
+Campbell, J. Y., &amp; Shiller, R. J. (1998). Valuation ratios and the long-run stock market outlook. <em>The Journal of Portfolio Management</em>, <em>24</em>(2), 11–26. <a href="https://www.econ.yale.edu/~shiller/online/jpmalt.pdf">https://www.econ.yale.edu/~shiller/online/jpmalt.pdf</a>
 </div>
 <div id="ref-cochrane2011" class="csl-entry" role="listitem">
-Cochrane, John H. 2011. <span>“Presidential Address: Discount Rates.”</span> <em>The Journal of Finance</em> 66 (4): 1047–108. <a href="https://paulgp.com/speeches/cochrane_2011_afa.pdf">https://paulgp.com/speeches/cochrane_2011_afa.pdf</a>.
+Cochrane, J. H. (2011). Presidential address: Discount rates. <em>The Journal of Finance</em>, <em>66</em>(4), 1047–1108. <a href="https://paulgp.com/speeches/cochrane_2011_afa.pdf">https://paulgp.com/speeches/cochrane_2011_afa.pdf</a>
 </div>
 <div id="ref-damodaran2006" class="csl-entry" role="listitem">
-Damodaran, Aswath. 2006. <em>Damodaran on Valuation</em>. Wiley. <a href="https://pages.stern.nyu.edu/~adamodar/pdfiles/DSV2/Ch2.pdf">https://pages.stern.nyu.edu/~adamodar/pdfiles/DSV2/Ch2.pdf</a>.
+Damodaran, A. (2006). <em>Damodaran on valuation</em>. Wiley. <a href="https://pages.stern.nyu.edu/~adamodar/pdfiles/DSV2/Ch2.pdf">https://pages.stern.nyu.edu/~adamodar/pdfiles/DSV2/Ch2.pdf</a>
 </div>
 <div id="ref-fama1970" class="csl-entry" role="listitem">
-Fama, Eugene F. 1970. <span>“Efficient Capital Markets: A Review of Theory and Empirical Work.”</span> <em>The Journal of Finance</em> 25 (2): 383–417. <a href="https://www.jstor.org/stable/2325486">https://www.jstor.org/stable/2325486</a>.
+Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. <em>The Journal of Finance</em>, <em>25</em>(2), 383–417. <a href="https://www.jstor.org/stable/2325486">https://www.jstor.org/stable/2325486</a>
 </div>
 <div id="ref-gorton2007" class="csl-entry" role="listitem">
-Gorton, Gary, Fumio Hayashi, and K. Geert Rouwenhorst. 2007. <em>The Fundamentals of Commodity Futures Returns</em>. No. 13249. National Bureau of Economic Research. <a href="https://www.nber.org/system/files/working_papers/w13249/w13249.pdf">https://www.nber.org/system/files/working_papers/w13249/w13249.pdf</a>.
+Gorton, G., Hayashi, F., &amp; Rouwenhorst, K. G. (2007). <em>The fundamentals of commodity futures returns</em> (No. 13249). National Bureau of Economic Research. <a href="https://www.nber.org/system/files/working_papers/w13249/w13249.pdf">https://www.nber.org/system/files/working_papers/w13249/w13249.pdf</a>
 </div>
 <div id="ref-greenwood2014" class="csl-entry" role="listitem">
-Greenwood, Robin, and Andrei Shleifer. 2014. <span>“Expectations of Returns and Expected Returns.”</span> <em>Review of Financial Studies</em> 27 (3): 714–46. <a href="https://www.nber.org/system/files/working_papers/w18686/w18686.pdf">https://www.nber.org/system/files/working_papers/w18686/w18686.pdf</a>.
+Greenwood, R., &amp; Shleifer, A. (2014). Expectations of returns and expected returns. <em>Review of Financial Studies</em>, <em>27</em>(3), 714–746. <a href="https://www.nber.org/system/files/working_papers/w18686/w18686.pdf">https://www.nber.org/system/files/working_papers/w18686/w18686.pdf</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -710,4 +709,5 @@ Greenwood, Robin, and Andrei Shleifer. 2014. <span>“Expectations of Returns an
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

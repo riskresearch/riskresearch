@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,6 +90,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -112,43 +114,40 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Preface</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-framework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Framework</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-framework">    
-        <li>
-    <a class="dropdown-item" href="./01_markets_prices_expectations.html">
- <span class="dropdown-text">1. Markets, prices, and expectations</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./01_markets_prices_expectations.html"> 
+<span class="menu-text">1. Markets &amp; Prices</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./02_speculation_excess_crowds.html">
- <span class="dropdown-text">2. Speculation, excess, and crowds</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./02_speculation_excess_crowds.html" aria-current="page"> 
+<span class="menu-text">2. Speculation</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./03_signals_forecasting_outperformance.html">
- <span class="dropdown-text">3. Signals, forecasting, and outperformance</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./03_signals_forecasting_outperformance.html"> 
+<span class="menu-text">3. Signals</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./04_return_sources_factor_structure.html">
- <span class="dropdown-text">4. Return sources and factor structure</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./04_return_sources_factor_structure.html"> 
+<span class="menu-text">4. Return Sources</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./05_portfolio_construction.html">
- <span class="dropdown-text">5. Portfolio construction</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./05_portfolio_construction.html"> 
+<span class="menu-text">5. Portfolio Construction</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./06_expected_returns.html">
- <span class="dropdown-text">6. Expected returns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./06_expected_returns.html"> 
+<span class="menu-text">6. Expected Returns</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./07_core_allocation_active_programs.html">
- <span class="dropdown-text">7. Core allocation to active programs</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./07_core_allocation_active_programs.html"> 
+<span class="menu-text">7. Core Allocation</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./08_strategy_implementation.html"> 
+<span class="menu-text">8. Strategy</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -162,9 +161,9 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#how-excess-begins-and-why-it-convinces" id="toc-how-excess-begins-and-why-it-convinces" class="nav-link active" data-scroll-target="#how-excess-begins-and-why-it-convinces">How excess begins, and why it convinces</a></li>
   <li><a href="#how-crowds-build-and-why-they-persist" id="toc-how-crowds-build-and-why-they-persist" class="nav-link" data-scroll-target="#how-crowds-build-and-why-they-persist">How crowds build and why they persist</a></li>
   <li><a href="#why-informed-investors-participate-anyway" id="toc-why-informed-investors-participate-anyway" class="nav-link" data-scroll-target="#why-informed-investors-participate-anyway">Why informed investors participate anyway</a></li>
@@ -194,14 +193,14 @@ div.csl-indent {
 </header>
 
 
-<p>Speculative episodes are often treated as exceptions — departures from the normal condition of rational pricing that require special explanation. The historical record does not support that framing. Episodes of significant market excess have occurred across every major asset class, across every institutional era, and in markets populated by professional investors as well as retail ones. What changes across episodes is the surface detail. The underlying structure tends to be recognizable: a plausible initial thesis, rising prices that appear to validate it, broadening participation, weakening selectivity, and eventually a stage where price no longer needs strong fundamentals to keep moving. It only needs continued willingness from others to pay more <span class="citation" data-cites="kindleberger2011 brunnermeier2016">(<a href="#ref-kindleberger2011" role="doc-biblioref">Kindleberger and Aliber 2011</a>; <a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier and Schnabel 2016</a>)</span>.</p>
+<p>Speculative episodes are often treated as exceptions — departures from the normal condition of rational pricing that require special explanation. The historical record does not support that framing. Episodes of significant market excess have occurred across every major asset class, across every institutional era, and in markets populated by professional investors as well as retail ones. What changes across episodes is the surface detail. The underlying structure tends to be recognizable: a plausible initial thesis, rising prices that appear to validate it, broadening participation, weakening selectivity, and eventually a stage where price no longer needs strong fundamentals to keep moving. It only needs continued willingness from others to pay more <span class="citation" data-cites="kindleberger2011 brunnermeier2016">(<a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier &amp; Schnabel, 2016</a>; <a href="#ref-kindleberger2011" role="doc-biblioref">Kindleberger &amp; Aliber, 2011</a>)</span>.</p>
 <p>This matters for a research framework because crowd dynamics change both risk and interpretation in ways that a purely valuation-based process misses. A position that is analytically sound over a long horizon can be overwhelmed in the short and medium term by momentum, leverage, and forced buying. A strategy that harvests a genuine premium under ordinary conditions can fail in a crowded regime because what it is actually capturing has shifted from mispricing to participation in a self-reinforcing move. Any framework that ignores this possibility has already become too static for actual markets.</p>
 <section id="how-excess-begins-and-why-it-convinces" class="level2">
 <h2 class="anchored" data-anchor-id="how-excess-begins-and-why-it-convinces">How excess begins, and why it convinces</h2>
 <p>Speculative episodes rarely begin in nonsense. They usually begin in something real.</p>
-<p>A genuine technological change, a structural decline in interest rates, a new regulatory opening, a new source of accessible capital — any of these can create a legitimate basis for early optimism. In those initial stages, price appreciation may be defensible. Barberis, Greenwood, Jin, and Shleifer make this point explicitly: good fundamental news can initiate a bubble rather than prevent one, because it attracts extrapolative capital that then continues well beyond what the original news can justify <span class="citation" data-cites="barberis2018">(<a href="#ref-barberis2018" role="doc-biblioref">Barberis et al. 2018</a>)</span>. The problem is not that the observation is wrong. The problem is what happens when a valid observation extends beyond what the evidence can support.</p>
+<p>A genuine technological change, a structural decline in interest rates, a new regulatory opening, a new source of accessible capital — any of these can create a legitimate basis for early optimism. In those initial stages, price appreciation may be defensible. Barberis, Greenwood, Jin, and Shleifer make this point explicitly: good fundamental news can initiate a bubble rather than prevent one, because it attracts extrapolative capital that then continues well beyond what the original news can justify <span class="citation" data-cites="barberis2018">(<a href="#ref-barberis2018" role="doc-biblioref">Barberis et al., 2018</a>)</span>. The problem is not that the observation is wrong. The problem is what happens when a valid observation extends beyond what the evidence can support.</p>
 <p>A strong business becomes one for which no valuation is considered excessive. A new technology becomes justification for setting aside questions of capital intensity, competitive entry, or financing cost. Easier liquidity becomes grounds for assuming that funding conditions will remain benign indefinitely. At that point the market is no longer repricing an improvement. It is capitalizing a progressively more demanding chain of assumptions, each one requiring the next to hold.</p>
-<p>The 1990s technology cycle illustrates this structure clearly. The underlying thesis — that internet adoption would reshape commerce, communication, and information — was correct. What happened to valuations was something else. The chart below shows the Nasdaq Composite rebased to 100 in January 1995, alongside the S&amp;P 500 Shiller CAPE — a broad market valuation measure that captures how expensive equities were becoming across the whole market as the technology boom expanded beyond the sector itself. By early 2000 the Nasdaq had risen approximately 400 percent from its 1995 level while the CAPE reached approximately 44x — a level that could only be justified if growth remained frictionless, competition minimal, and capital permanently abundant. The story was real. The pricing had traveled far beyond what the story could support <span class="citation" data-cites="shiller2015">(<a href="#ref-shiller2015" role="doc-biblioref">Shiller 2015</a>)</span>.</p>
+<p>The 1990s technology cycle illustrates this structure clearly. The underlying thesis — that internet adoption would reshape commerce, communication, and information — was correct. What happened to valuations was something else. The chart below shows the Nasdaq Composite rebased to 100 in January 1995, alongside the S&amp;P 500 Shiller CAPE — a broad market valuation measure that captures how expensive equities were becoming across the whole market as the technology boom expanded beyond the sector itself. By early 2000 the Nasdaq had risen approximately 400 percent from its 1995 level while the CAPE reached approximately 44x — a level that could only be justified if growth remained frictionless, competition minimal, and capital permanently abundant. The story was real. The pricing had traveled far beyond what the story could support <span class="citation" data-cites="shiller2015">(<a href="#ref-shiller2015" role="doc-biblioref">Shiller, 2015</a>)</span>.</p>
 <div id="03709f24" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -213,7 +212,7 @@ div.csl-indent {
 </div>
 </div>
 <p>By the time the Nasdaq peaked, the price had become largely self-referential — the primary case for owning technology stocks was that they had been rising, not that the underlying businesses justified the implied terminal value assumptions. The correction that followed was not a surprise to valuation-aware investors. Its timing and severity were.</p>
-<p>The same dynamic appeared in residential credit markets between 2003 and 2007, though through a different instrument. The underlying thesis — that diversified pools of mortgages would carry modest correlated default risk — was not unreasonable under historical assumptions. What those assumptions failed to anticipate was the feedback between easy credit, rising collateral values, and the volume of new origination. The chart below shows the U.S. housing cycle through this period. Housing starts and the Case-Shiller national home price index — a repeat-sales measure of U.S. residential property prices — rose together through the mid-2000s as financing conditions loosened and demand appeared self-sustaining. When conditions reversed in 2006 and 2007, delinquency rates on single-family mortgages began rising sharply — not gradually — because the diversification that had been priced as stable proved to be deeply contingent on the continuation of the boom that had created it <span class="citation" data-cites="brunnermeier2016">(<a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier and Schnabel 2016</a>)</span>.</p>
+<p>The same dynamic appeared in residential credit markets between 2003 and 2007, though through a different instrument. The underlying thesis — that diversified pools of mortgages would carry modest correlated default risk — was not unreasonable under historical assumptions. What those assumptions failed to anticipate was the feedback between easy credit, rising collateral values, and the volume of new origination. The chart below shows the U.S. housing cycle through this period. Housing starts and the Case-Shiller national home price index — a repeat-sales measure of U.S. residential property prices — rose together through the mid-2000s as financing conditions loosened and demand appeared self-sustaining. When conditions reversed in 2006 and 2007, delinquency rates on single-family mortgages began rising sharply — not gradually — because the diversification that had been priced as stable proved to be deeply contingent on the continuation of the boom that had created it <span class="citation" data-cites="brunnermeier2016">(<a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier &amp; Schnabel, 2016</a>)</span>.</p>
 <div id="14b9df0e" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -224,14 +223,14 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>More recently, the 2020–2021 period saw parallel episodes across thematic equities, SPACs, and certain crypto assets. Fiscal and monetary support following the pandemic created liquidity conditions that pushed investors toward riskier assets in search of higher returns. Many assets with negligible current earnings were valued on terminal revenue assumptions that assumed no competition, no dilution, and no cost of capital. When real rates rose sharply through 2022, those implied discount rates became relevant again and valuations compressed severely — not because the businesses had necessarily deteriorated, but because the regime in which their valuations had been formed had changed <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane 2011</a>)</span>.</p>
+<p>More recently, the 2020–2021 period saw parallel episodes across thematic equities, SPACs, and certain crypto assets. Fiscal and monetary support following the pandemic created liquidity conditions that pushed investors toward riskier assets in search of higher returns. Many assets with negligible current earnings were valued on terminal revenue assumptions that assumed no competition, no dilution, and no cost of capital. When real rates rose sharply through 2022, those implied discount rates became relevant again and valuations compressed severely — not because the businesses had necessarily deteriorated, but because the regime in which their valuations had been formed had changed <span class="citation" data-cites="cochrane2011">(<a href="#ref-cochrane2011" role="doc-biblioref">Cochrane, 2011</a>)</span>.</p>
 </section>
 <section id="how-crowds-build-and-why-they-persist" class="level2">
 <h2 class="anchored" data-anchor-id="how-crowds-build-and-why-they-persist">How crowds build and why they persist</h2>
 <p>These episodes tend to develop through recognizable stages, though the timing is never fixed and the transitions are rarely clean.</p>
 <p>Recognition comes first. A real change enters the market and is not yet fully priced. Early participants may have a genuine analytical basis. The trade is not yet crowded.</p>
-<p>Validation follows. Rising prices attract attention. Investors who were initially skeptical begin to revise their view — not always because fundamentals improved further, but because price itself is now functioning as evidence. This is the Barberis-Shleifer-Vishny mechanism: investors act as if recent price increases raise the probability of continued appreciation rather than the probability of mean reversion <span class="citation" data-cites="barberis1998">(<a href="#ref-barberis1998" role="doc-biblioref">Barberis et al. 1998</a>)</span>.</p>
-<p>The expansion stage then brings more capital, new issuance, and a broadening of participation. Weaker businesses rise alongside stronger ones because market reward has shifted from underlying economics to association with the theme. Greenwood, Shleifer, and You identify several empirical markers of this phase: acceleration in industry returns, elevated volatility, rising issuance, and the relative outperformance of newer, less-established firms within the sector <span class="citation" data-cites="greenwood2019">(<a href="#ref-greenwood2019" role="doc-biblioref">Greenwood et al. 2019</a>)</span>.</p>
+<p>Validation follows. Rising prices attract attention. Investors who were initially skeptical begin to revise their view — not always because fundamentals improved further, but because price itself is now functioning as evidence. This is the Barberis-Shleifer-Vishny mechanism: investors act as if recent price increases raise the probability of continued appreciation rather than the probability of mean reversion <span class="citation" data-cites="barberis1998">(<a href="#ref-barberis1998" role="doc-biblioref">Barberis et al., 1998</a>)</span>.</p>
+<p>The expansion stage then brings more capital, new issuance, and a broadening of participation. Weaker businesses rise alongside stronger ones because market reward has shifted from underlying economics to association with the theme. Greenwood, Shleifer, and You identify several empirical markers of this phase: acceleration in industry returns, elevated volatility, rising issuance, and the relative outperformance of newer, less-established firms within the sector <span class="citation" data-cites="greenwood2019">(<a href="#ref-greenwood2019" role="doc-biblioref">Greenwood et al., 2019</a>)</span>.</p>
 <p>One of the clearest observable symptoms of the expansion stage is the deterioration of quality discrimination — the narrowing of the performance spread between fundamentally strong businesses and speculative ones riding the same thematic wave. The chart below illustrates this using ARK Innovation ETF (ARKK) as a proxy for high-growth, predominantly unprofitable businesses and the Nasdaq-100 (QQQ) as a proxy for quality large-cap technology. During the 2020 boom, ARKK dramatically outperformed QQQ as capital flowed indiscriminately toward growth-associated names regardless of profitability. When the regime reversed in 2022, the spread snapped back sharply. The relative index, shown in the lower panel, makes the cycle visible: quality discrimination collapsed during the expansion stage and reasserted itself forcefully once sentiment shifted.</p>
 <div id="84f5da4b" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -243,8 +242,8 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>Reflexivity then takes over. Price strength improves collateral values, eases financing terms, and raises reported wealth, all of which support additional buying. The boom begins to appear self-justifying from within. Scheinkman and Xiong formalize one version of this mechanism: when investors hold heterogeneous beliefs and can resell to more optimistic buyers, asset prices embed an option value of resale that pushes prices above any single agent’s fundamental estimate, independent of whether anyone in the market is irrational <span class="citation" data-cites="scheinkman2003">(<a href="#ref-scheinkman2003" role="doc-biblioref">Scheinkman and Xiong 2003</a>)</span>.</p>
-<p>The late stage typically looks strongest from the outside. Momentum remains powerful, sentiment is confident, and skeptics appear out of touch. But structural fragility has increased. Expectations are demanding. Continued support depends on sustained inflows from a marginal buyer who may already be fully extended. Supply tends to respond: new listings, secondaries, leveraged products, and themed vehicles emerge precisely when investor appetite is most abundant. The chart below shows annual U.S. IPO volume from 1980 to 2023. The clustering is striking — issuance surged in 1996–2000 during the technology boom, collapsed after the bust, and surged again in 2021 during the pandemic liquidity episode. In both cases the peak in issuance coincided with the peak in speculative enthusiasm, not with the period of most attractive forward returns <span class="citation" data-cites="loughran2002 lowry2003">(<a href="#ref-loughran2002" role="doc-biblioref">Loughran and Ritter 2002</a>; <a href="#ref-lowry2003" role="doc-biblioref">Lowry 2003</a>)</span>.</p>
+<p>Reflexivity then takes over. Price strength improves collateral values, eases financing terms, and raises reported wealth, all of which support additional buying. The boom begins to appear self-justifying from within. Scheinkman and Xiong formalize one version of this mechanism: when investors hold heterogeneous beliefs and can resell to more optimistic buyers, asset prices embed an option value of resale that pushes prices above any single agent’s fundamental estimate, independent of whether anyone in the market is irrational <span class="citation" data-cites="scheinkman2003">(<a href="#ref-scheinkman2003" role="doc-biblioref">Scheinkman &amp; Xiong, 2003</a>)</span>.</p>
+<p>The late stage typically looks strongest from the outside. Momentum remains powerful, sentiment is confident, and skeptics appear out of touch. But structural fragility has increased. Expectations are demanding. Continued support depends on sustained inflows from a marginal buyer who may already be fully extended. Supply tends to respond: new listings, secondaries, leveraged products, and themed vehicles emerge precisely when investor appetite is most abundant. The chart below shows annual U.S. IPO volume from 1980 to 2023. The clustering is striking — issuance surged in 1996–2000 during the technology boom, collapsed after the bust, and surged again in 2021 during the pandemic liquidity episode. In both cases the peak in issuance coincided with the peak in speculative enthusiasm, not with the period of most attractive forward returns <span class="citation" data-cites="loughran2002 lowry2003">(<a href="#ref-loughran2002" role="doc-biblioref">Loughran &amp; Ritter, 2002</a>; <a href="#ref-lowry2003" role="doc-biblioref">Lowry, 2003</a>)</span>.</p>
 <div id="a48b64a1" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -260,16 +259,16 @@ div.csl-indent {
 <section id="why-informed-investors-participate-anyway" class="level2">
 <h2 class="anchored" data-anchor-id="why-informed-investors-participate-anyway">Why informed investors participate anyway</h2>
 <p>It is tempting to describe speculative excess as a phenomenon of the uninformed. The evidence does not support that. Institutional investors, experienced allocators, and analytically sophisticated analysts participate in crowded markets regularly, though usually for reasons that are structurally different from simple credulity.</p>
-<p>The most consistent reason is relative-performance pressure. Underperforming a rising market is not experienced as passive neutrality inside investment organizations. It is experienced as active failure — visible to clients and to competitors. When a popular theme continues to work, the cost of staying outside it is not only financial. Careers, mandates, and client relationships are all affected by prolonged underperformance relative to a benchmark that has moved in one direction. Hong, Kubik, and Stein find evidence consistent with this mechanism in the behavior of professional money managers: portfolio decisions are influenced by what peers are holding, in a way that amplifies rather than stabilizes price trends <span class="citation" data-cites="hong2005">(<a href="#ref-hong2005" role="doc-biblioref">Hong et al. 2005</a>)</span>.</p>
+<p>The most consistent reason is relative-performance pressure. Underperforming a rising market is not experienced as passive neutrality inside investment organizations. It is experienced as active failure — visible to clients and to competitors. When a popular theme continues to work, the cost of staying outside it is not only financial. Careers, mandates, and client relationships are all affected by prolonged underperformance relative to a benchmark that has moved in one direction. Hong, Kubik, and Stein find evidence consistent with this mechanism in the behavior of professional money managers: portfolio decisions are influenced by what peers are holding, in a way that amplifies rather than stabilizes price trends <span class="citation" data-cites="hong2005">(<a href="#ref-hong2005" role="doc-biblioref">Hong et al., 2005</a>)</span>.</p>
 <p>A second reason is that crowded trades can remain profitable well past the point where they appear analytically excessive. The immediate risk of resisting a popular theme may be greater than the immediate risk of joining it, even when the long-run risk profile has clearly worsened. This is why speculative episodes do not correct at the moment they become visible as speculative. The trade continues working because the mechanism sustaining it — inflows, leverage, narrative confidence — does not require fundamental support to remain operative in the short term.</p>
-<p>A third reason is that being early and being wrong are difficult to distinguish in real time. A valuation argument may be directionally correct and still lose money over the horizon that matters for capital allocation, client relationships, or the patience of those overseeing the mandate. Once that experience repeats, even careful analysts become more likely to adapt to the market rather than continue resisting it. Scharfstein and Stein formalize this in their model of herding among professional managers: reputational concerns create an incentive to act in line with others even when private signals diverge, because being wrong in a consensus trade is professionally safer than being wrong alone <span class="citation" data-cites="scharfstein1990">(<a href="#ref-scharfstein1990" role="doc-biblioref">Scharfstein and Stein 1990</a>)</span>.</p>
+<p>A third reason is that being early and being wrong are difficult to distinguish in real time. A valuation argument may be directionally correct and still lose money over the horizon that matters for capital allocation, client relationships, or the patience of those overseeing the mandate. Once that experience repeats, even careful analysts become more likely to adapt to the market rather than continue resisting it. Scharfstein and Stein formalize this in their model of herding among professional managers: reputational concerns create an incentive to act in line with others even when private signals diverge, because being wrong in a consensus trade is professionally safer than being wrong alone <span class="citation" data-cites="scharfstein1990">(<a href="#ref-scharfstein1990" role="doc-biblioref">Scharfstein &amp; Stein, 1990</a>)</span>.</p>
 </section>
 <section id="the-difficulty-of-trading-excess" class="level2">
 <h2 class="anchored" data-anchor-id="the-difficulty-of-trading-excess">The difficulty of trading excess</h2>
 <p>Identifying a speculative regime is easier than acting on that identification profitably. This is one of the most practically important points in the analysis of crowded markets, and it is frequently underweighted.</p>
-<p>The first problem is timing. A market can be recognizably extended and continue rising for much longer than expected. Many analytically sound short or underweight positions have been closed at a loss before the eventual reversal. Greenwood, Shleifer, and You address this directly: while historical data allow some identification of which episodes ended as crashes, the timing of the crash itself is not reliably forecastable <span class="citation" data-cites="greenwood2019">(<a href="#ref-greenwood2019" role="doc-biblioref">Greenwood et al. 2019</a>)</span>.</p>
+<p>The first problem is timing. A market can be recognizably extended and continue rising for much longer than expected. Many analytically sound short or underweight positions have been closed at a loss before the eventual reversal. Greenwood, Shleifer, and You address this directly: while historical data allow some identification of which episodes ended as crashes, the timing of the crash itself is not reliably forecastable <span class="citation" data-cites="greenwood2019">(<a href="#ref-greenwood2019" role="doc-biblioref">Greenwood et al., 2019</a>)</span>.</p>
 <p>The second problem is asymmetry of pain. The investor who joins a crowded trade late may still profit if inflows remain strong for another period. The investor who fights it correctly in analytical terms but too early may suffer drawdown, client pressure, and institutional erosion long before the reversal occurs.</p>
-<p>The third problem is that reversals differ by mechanism. Some episodes deflate slowly through time and earnings disappointment. Others break abruptly when financing conditions tighten, when a single event changes risk appetite, or when one large forced seller triggers a liquidity withdrawal. Brunnermeier and Schnabel’s historical analysis shows that when a boom was financed primarily through leverage and credit expansion, the macroeconomic and financial damage from the bust tends to be substantially larger than when the excess was driven by enthusiasm alone <span class="citation" data-cites="brunnermeier2016">(<a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier and Schnabel 2016</a>)</span>. The chart below makes this contrast visible. The Nasdaq-100 bust of 2000–2002 and the S&amp;P 500 Financials collapse of 2007–2009 both produced severe drawdowns, but through very different mechanisms. The technology bust was an equity repricing without a systemic credit dimension — painful but contained. The financial crisis amplified through leverage, collateral calls, and institutional balance sheets, producing a deeper systemic disruption despite a comparable peak-to-trough magnitude in equity prices.</p>
+<p>The third problem is that reversals differ by mechanism. Some episodes deflate slowly through time and earnings disappointment. Others break abruptly when financing conditions tighten, when a single event changes risk appetite, or when one large forced seller triggers a liquidity withdrawal. Brunnermeier and Schnabel’s historical analysis shows that when a boom was financed primarily through leverage and credit expansion, the macroeconomic and financial damage from the bust tends to be substantially larger than when the excess was driven by enthusiasm alone <span class="citation" data-cites="brunnermeier2016">(<a href="#ref-brunnermeier2016" role="doc-biblioref">Brunnermeier &amp; Schnabel, 2016</a>)</span>. The chart below makes this contrast visible. The Nasdaq-100 bust of 2000–2002 and the S&amp;P 500 Financials collapse of 2007–2009 both produced severe drawdowns, but through very different mechanisms. The technology bust was an equity repricing without a systemic credit dimension — painful but contained. The financial crisis amplified through leverage, collateral calls, and institutional balance sheets, producing a deeper systemic disruption despite a comparable peak-to-trough magnitude in equity prices.</p>
 <div id="755b8a42" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -286,42 +285,42 @@ div.csl-indent {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-barberis2018" class="csl-entry" role="listitem">
-Barberis, Nicholas, Robin Greenwood, Lawrence Jin, and Andrei Shleifer. 2018. <span>“Extrapolation and Bubbles.”</span> <em>Journal of Financial Economics</em> 129 (2): 203–27. <a href="https://www.hks.harvard.edu/sites/default/files/HKSEE/HKSEE%20Files/BF_Extrapolation_Greenwood.pdf">https://www.hks.harvard.edu/sites/default/files/HKSEE/HKSEE%20Files/BF_Extrapolation_Greenwood.pdf</a>.
+Barberis, N., Greenwood, R., Jin, L., &amp; Shleifer, A. (2018). Extrapolation and bubbles. <em>Journal of Financial Economics</em>, <em>129</em>(2), 203–227. <a href="https://www.hks.harvard.edu/sites/default/files/HKSEE/HKSEE%20Files/BF_Extrapolation_Greenwood.pdf">https://www.hks.harvard.edu/sites/default/files/HKSEE/HKSEE%20Files/BF_Extrapolation_Greenwood.pdf</a>
 </div>
 <div id="ref-barberis1998" class="csl-entry" role="listitem">
-Barberis, Nicholas, Andrei Shleifer, and Robert Vishny. 1998. <span>“A Model of Investor Sentiment.”</span> <em>Journal of Financial Economics</em> 49 (3): 307–43. <a href="https://scholar.harvard.edu/files/shleifer/files/model_of_investor_sentiment.pdf">https://scholar.harvard.edu/files/shleifer/files/model_of_investor_sentiment.pdf</a>.
+Barberis, N., Shleifer, A., &amp; Vishny, R. (1998). A model of investor sentiment. <em>Journal of Financial Economics</em>, <em>49</em>(3), 307–343. <a href="https://scholar.harvard.edu/files/shleifer/files/model_of_investor_sentiment.pdf">https://scholar.harvard.edu/files/shleifer/files/model_of_investor_sentiment.pdf</a>
 </div>
 <div id="ref-brunnermeier2016" class="csl-entry" role="listitem">
-Brunnermeier, Markus K., and Isabel Schnabel. 2016. <span>“Bubbles and Central Banks: Historical Perspectives.”</span> In <em>Central Banks at a Crossroads: What Can We Learn from History?</em> Cambridge University Press. <a href="https://www.aeaweb.org/conference/2016/retrieve.php?pdfid=21744">https://www.aeaweb.org/conference/2016/retrieve.php?pdfid=21744</a>.
+Brunnermeier, M. K., &amp; Schnabel, I. (2016). Bubbles and central banks: Historical perspectives. In <em>Central banks at a crossroads: What can we learn from history?</em> Cambridge University Press. <a href="https://www.aeaweb.org/conference/2016/retrieve.php?pdfid=21744">https://www.aeaweb.org/conference/2016/retrieve.php?pdfid=21744</a>
 </div>
 <div id="ref-cochrane2011" class="csl-entry" role="listitem">
-Cochrane, John H. 2011. <span>“Presidential Address: Discount Rates.”</span> <em>The Journal of Finance</em> 66 (4): 1047–108. <a href="https://paulgp.com/speeches/cochrane_2011_afa.pdf">https://paulgp.com/speeches/cochrane_2011_afa.pdf</a>.
+Cochrane, J. H. (2011). Presidential address: Discount rates. <em>The Journal of Finance</em>, <em>66</em>(4), 1047–1108. <a href="https://paulgp.com/speeches/cochrane_2011_afa.pdf">https://paulgp.com/speeches/cochrane_2011_afa.pdf</a>
 </div>
 <div id="ref-greenwood2019" class="csl-entry" role="listitem">
-Greenwood, Robin, Andrei Shleifer, and Yang You. 2019. <span>“Bubbles for <span>Fama</span>.”</span> <em>Journal of Financial Economics</em> 131 (1): 20–43. <a href="https://www.nber.org/system/files/working_papers/w23191/w23191.pdf">https://www.nber.org/system/files/working_papers/w23191/w23191.pdf</a>.
+Greenwood, R., Shleifer, A., &amp; You, Y. (2019). Bubbles for <span>Fama</span>. <em>Journal of Financial Economics</em>, <em>131</em>(1), 20–43. <a href="https://www.nber.org/system/files/working_papers/w23191/w23191.pdf">https://www.nber.org/system/files/working_papers/w23191/w23191.pdf</a>
 </div>
 <div id="ref-hong2005" class="csl-entry" role="listitem">
-Hong, Harrison, Jeffrey Kubik, and Jeremy C. Stein. 2005. <span>“Thy Neighbor’s Portfolio: Word-of-Mouth Effects in the Holdings and Trades of Money Managers.”</span> <em>The Journal of Finance</em> 60 (6): 2801–24.
+Hong, H., Kubik, J., &amp; Stein, J. C. (2005). Thy neighbor’s portfolio: Word-of-mouth effects in the holdings and trades of money managers. <em>The Journal of Finance</em>, <em>60</em>(6), 2801–2824.
 </div>
 <div id="ref-kindleberger2011" class="csl-entry" role="listitem">
-Kindleberger, Charles P., and Robert Z. Aliber. 2011. <em>Manias, Panics, and Crashes: A History of Financial Crises</em>. 6th ed. Palgrave Macmillan.
+Kindleberger, C. P., &amp; Aliber, R. Z. (2011). <em>Manias, panics, and crashes: A history of financial crises</em> (6th ed.). Palgrave Macmillan.
 </div>
 <div id="ref-loughran2002" class="csl-entry" role="listitem">
-Loughran, Tim, and Jay R. Ritter. 2002. <span>“Why Don’t Issuers Get Upset about Leaving Money on the Table in <span>IPO</span>s?”</span> <em>Review of Financial Studies</em> 15 (2): 413–44. <a href="https://www.nber.org/system/files/working_papers/w8805/w8805.pdf">https://www.nber.org/system/files/working_papers/w8805/w8805.pdf</a>.
+Loughran, T., &amp; Ritter, J. R. (2002). Why don’t issuers get upset about leaving money on the table in <span>IPO</span>s? <em>Review of Financial Studies</em>, <em>15</em>(2), 413–444. <a href="https://www.nber.org/system/files/working_papers/w8805/w8805.pdf">https://www.nber.org/system/files/working_papers/w8805/w8805.pdf</a>
 </div>
 <div id="ref-lowry2003" class="csl-entry" role="listitem">
-Lowry, Michelle. 2003. <span>“Why Does <span>IPO</span> Volume Fluctuate so Much?”</span> <em>Journal of Financial Economics</em> 67 (1): 3–40. <a href="https://www.nber.org/system/files/working_papers/w7935/w7935.pdf">https://www.nber.org/system/files/working_papers/w7935/w7935.pdf</a>.
+Lowry, M. (2003). Why does <span>IPO</span> volume fluctuate so much? <em>Journal of Financial Economics</em>, <em>67</em>(1), 3–40. <a href="https://www.nber.org/system/files/working_papers/w7935/w7935.pdf">https://www.nber.org/system/files/working_papers/w7935/w7935.pdf</a>
 </div>
 <div id="ref-scharfstein1990" class="csl-entry" role="listitem">
-Scharfstein, David S., and Jeremy C. Stein. 1990. <span>“Herd Behavior and Investment.”</span> <em>The American Economic Review</em> 80 (3): 465–79. <a href="https://www.jstor.org/stable/2006678">https://www.jstor.org/stable/2006678</a>.
+Scharfstein, D. S., &amp; Stein, J. C. (1990). Herd behavior and investment. <em>The American Economic Review</em>, <em>80</em>(3), 465–479. <a href="https://www.jstor.org/stable/2006678">https://www.jstor.org/stable/2006678</a>
 </div>
 <div id="ref-scheinkman2003" class="csl-entry" role="listitem">
-Scheinkman, José A., and Wei Xiong. 2003. <span>“Overconfidence and Speculative Bubbles.”</span> <em>Journal of Political Economy</em> 111 (6): 1183–219.
+Scheinkman, J. A., &amp; Xiong, W. (2003). Overconfidence and speculative bubbles. <em>Journal of Political Economy</em>, <em>111</em>(6), 1183–1219.
 </div>
 <div id="ref-shiller2015" class="csl-entry" role="listitem">
-Shiller, Robert J. 2015. <em>Irrational Exuberance</em>. 3rd ed. Princeton University Press.
+Shiller, R. J. (2015). <em>Irrational exuberance</em> (3rd ed.). Princeton University Press.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -729,4 +728,5 @@ Shiller, Robert J. 2015. <em>Irrational Exuberance</em>. 3rd ed. Princeton Unive
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

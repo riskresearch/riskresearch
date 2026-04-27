@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,6 +90,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -112,43 +114,40 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Preface</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-framework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Framework</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-framework">    
-        <li>
-    <a class="dropdown-item" href="./01_markets_prices_expectations.html">
- <span class="dropdown-text">1. Markets, prices, and expectations</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./01_markets_prices_expectations.html"> 
+<span class="menu-text">1. Markets &amp; Prices</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./02_speculation_excess_crowds.html">
- <span class="dropdown-text">2. Speculation, excess, and crowds</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./02_speculation_excess_crowds.html"> 
+<span class="menu-text">2. Speculation</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./03_signals_forecasting_outperformance.html">
- <span class="dropdown-text">3. Signals, forecasting, and outperformance</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./03_signals_forecasting_outperformance.html"> 
+<span class="menu-text">3. Signals</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./04_return_sources_factor_structure.html">
- <span class="dropdown-text">4. Return sources and factor structure</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./04_return_sources_factor_structure.html" aria-current="page"> 
+<span class="menu-text">4. Return Sources</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./05_portfolio_construction.html">
- <span class="dropdown-text">5. Portfolio construction</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./05_portfolio_construction.html"> 
+<span class="menu-text">5. Portfolio Construction</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./06_expected_returns.html">
- <span class="dropdown-text">6. Expected returns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./06_expected_returns.html"> 
+<span class="menu-text">6. Expected Returns</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./07_core_allocation_active_programs.html">
- <span class="dropdown-text">7. Core allocation to active programs</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./07_core_allocation_active_programs.html"> 
+<span class="menu-text">7. Core Allocation</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./08_strategy_implementation.html"> 
+<span class="menu-text">8. Strategy</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -162,9 +161,9 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#the-structure-of-return-beta-factor-and-alpha" id="toc-the-structure-of-return-beta-factor-and-alpha" class="nav-link active" data-scroll-target="#the-structure-of-return-beta-factor-and-alpha">The structure of return: beta, factor, and alpha</a></li>
   <li><a href="#risk-premia-are-compensation-for-bearing-genuine-discomfort" id="toc-risk-premia-are-compensation-for-bearing-genuine-discomfort" class="nav-link" data-scroll-target="#risk-premia-are-compensation-for-bearing-genuine-discomfort">Risk premia are compensation for bearing genuine discomfort</a></li>
   <li><a href="#factor-premia-risk-structure-or-behavior" id="toc-factor-premia-risk-structure-or-behavior" class="nav-link" data-scroll-target="#factor-premia-risk-structure-or-behavior">Factor premia: risk, structure, or behavior?</a></li>
@@ -201,8 +200,8 @@ div.csl-indent {
 <section id="the-structure-of-return-beta-factor-and-alpha" class="level2">
 <h2 class="anchored" data-anchor-id="the-structure-of-return-beta-factor-and-alpha">The structure of return: beta, factor, and alpha</h2>
 <p>The cleanest way to organize return sources is through three nested layers, each more demanding in its requirements than the one before.</p>
-<p><strong>Market beta</strong> is the return associated with participating in a major asset class — equities, investment-grade bonds, sovereign duration, broad commodity indices. It is not manager skill. It is the compensation available to any investor willing to hold the market through its natural volatility and drawdown. The theoretical foundation comes from the Capital Asset Pricing Model, developed independently by Sharpe and Lintner in the mid-1960s <span class="citation" data-cites="sharpe1964">(<a href="#ref-sharpe1964" role="doc-biblioref">Sharpe 1964</a>)</span>. The CAPM’s central claim is that in equilibrium, the expected return on any asset above the risk-free rate is proportional to its sensitivity to the market portfolio — because only systematic, undiversifiable risk is rewarded. An investor can eliminate firm-specific risk through diversification, so the market will not compensate for it. What cannot be diversified away is exposure to broad economic conditions, and that is what beta measures. The CAPM is a simplification — empirically, markets have multiple priced risks rather than one — but its core insight survives in all subsequent factor models: broad market participation earns a return because it involves bearing real economic risk, not because it requires skill in picking securities.</p>
-<p><strong>Systematic factor exposure</strong> sits between broad market beta and pure residual alpha. It consists of persistent return drivers that appear across securities, geographies, and time periods, and that can be captured through rules-based implementation without requiring proprietary information or continuous active judgment. Fama and French extended the CAPM by documenting that small-cap and value stocks had historically earned returns above what their market beta alone could explain <span class="citation" data-cites="fama1993">(<a href="#ref-fama1993" role="doc-biblioref">Fama and French 1993</a>)</span>. Their three-factor model added size (SMB — small minus big) and value (HML — high minus low book-to-price) as additional priced factors. Carhart subsequently added momentum (UMD — up minus down) as a fourth factor, capturing the tendency of recent winners to continue outperforming recent losers in the medium term <span class="citation" data-cites="carhart1997">(<a href="#ref-carhart1997" role="doc-biblioref">Carhart 1997</a>)</span>. Asness, Moskowitz, and Pedersen then showed that value and momentum premia appear with consistent sign across eight diverse markets and asset classes — equities, bonds, currencies, and commodities — which is substantially stronger evidence than single-market findings and is difficult to reconcile with pure data mining <span class="citation" data-cites="asness2013">(<a href="#ref-asness2013" role="doc-biblioref">Asness et al. 2013</a>)</span>.</p>
+<p><strong>Market beta</strong> is the return associated with participating in a major asset class — equities, investment-grade bonds, sovereign duration, broad commodity indices. It is not manager skill. It is the compensation available to any investor willing to hold the market through its natural volatility and drawdown. The theoretical foundation comes from the Capital Asset Pricing Model, developed independently by Sharpe and Lintner in the mid-1960s <span class="citation" data-cites="sharpe1964">(<a href="#ref-sharpe1964" role="doc-biblioref">Sharpe, 1964</a>)</span>. The CAPM’s central claim is that in equilibrium, the expected return on any asset above the risk-free rate is proportional to its sensitivity to the market portfolio — because only systematic, undiversifiable risk is rewarded. An investor can eliminate firm-specific risk through diversification, so the market will not compensate for it. What cannot be diversified away is exposure to broad economic conditions, and that is what beta measures. The CAPM is a simplification — empirically, markets have multiple priced risks rather than one — but its core insight survives in all subsequent factor models: broad market participation earns a return because it involves bearing real economic risk, not because it requires skill in picking securities.</p>
+<p><strong>Systematic factor exposure</strong> sits between broad market beta and pure residual alpha. It consists of persistent return drivers that appear across securities, geographies, and time periods, and that can be captured through rules-based implementation without requiring proprietary information or continuous active judgment. Fama and French extended the CAPM by documenting that small-cap and value stocks had historically earned returns above what their market beta alone could explain <span class="citation" data-cites="fama1993">(<a href="#ref-fama1993" role="doc-biblioref">Fama &amp; French, 1993</a>)</span>. Their three-factor model added size (SMB — small minus big) and value (HML — high minus low book-to-price) as additional priced factors. Carhart subsequently added momentum (UMD — up minus down) as a fourth factor, capturing the tendency of recent winners to continue outperforming recent losers in the medium term <span class="citation" data-cites="carhart1997">(<a href="#ref-carhart1997" role="doc-biblioref">Carhart, 1997</a>)</span>. Asness, Moskowitz, and Pedersen then showed that value and momentum premia appear with consistent sign across eight diverse markets and asset classes — equities, bonds, currencies, and commodities — which is substantially stronger evidence than single-market findings and is difficult to reconcile with pure data mining <span class="citation" data-cites="asness2013">(<a href="#ref-asness2013" role="doc-biblioref">Asness et al., 2013</a>)</span>.</p>
 <p>The chart below shows the cumulative performance of these factors since 1963 alongside their annualized return and volatility statistics. The momentum factor (UMD) has produced the highest annualized return but with considerable volatility and periodic sharp reversals. The value factor (HML) has had a more volatile path, with an extended period of underperformance from 2017 to 2020 before partially recovering. The size factor (SMB) has been the weakest in recent decades. All three factors earn positive returns over the full sample, but none does so smoothly, and none does so in a way that suggests the premium can be harvested without bearing real discomfort.</p>
 <div id="28ed628f" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
@@ -231,9 +230,9 @@ div.csl-indent {
 <section id="risk-premia-are-compensation-for-bearing-genuine-discomfort" class="level2">
 <h2 class="anchored" data-anchor-id="risk-premia-are-compensation-for-bearing-genuine-discomfort">Risk premia are compensation for bearing genuine discomfort</h2>
 <p>Most of the return available at the beta and factor levels is best understood as compensation for bearing a form of risk or discomfort that other investors are unwilling or unable to absorb without payment.</p>
-<p>The equity risk premium is the most familiar example. Long-run real equity returns have historically exceeded those of cash by several hundred basis points annually, but that excess is earned through genuine exposure to business cycles, recession risk, earnings volatility, and episodes of severe drawdown. Fama and French document that the historical equity premium is large in unconditional terms but is earned through a distribution that includes 1929–1932, 1973–1974, 2000–2002, and 2008–2009 <span class="citation" data-cites="fama2004">(<a href="#ref-fama2004" role="doc-biblioref">Fama and French 2004</a>)</span>. An investor who wants the premium must hold through those periods. The premium is not paid in advance.</p>
-<p>The same logic applies to duration. Longer-maturity government bonds have historically yielded more than short-term instruments, partly as compensation for inflation uncertainty and partly for the risk that interest rates move adversely before maturity. That compensation is not constant — the term premium turned sharply negative in the post-2008 quantitative easing period before reasserting itself in 2022 — but as a long-run average it reflects real risk bearing <span class="citation" data-cites="adrian2013">(<a href="#ref-adrian2013" role="doc-biblioref">Adrian et al. 2013</a>)</span>.</p>
-<p>Credit spread follows the same pattern with more complexity. Investment-grade corporate bonds have historically yielded more than equivalent government bonds, and high-yield bonds more still. That spread contains several components: expected default losses, unexpected default risk, liquidity premia, and cyclical vulnerability — the tendency for credit spreads to widen precisely when economic conditions are weakening and the investor’s broader portfolio is already under pressure. Friewald, Wagner, and Zechner document that a significant component of credit returns is explained by equity-like risk factors, meaning that high-yield behaves more like an equity sub-asset than a diversifying fixed-income instrument in stress periods <span class="citation" data-cites="friewald2014">(<a href="#ref-friewald2014" role="doc-biblioref">Friewald et al. 2014</a>)</span>.</p>
+<p>The equity risk premium is the most familiar example. Long-run real equity returns have historically exceeded those of cash by several hundred basis points annually, but that excess is earned through genuine exposure to business cycles, recession risk, earnings volatility, and episodes of severe drawdown. Fama and French document that the historical equity premium is large in unconditional terms but is earned through a distribution that includes 1929–1932, 1973–1974, 2000–2002, and 2008–2009 <span class="citation" data-cites="fama2004">(<a href="#ref-fama2004" role="doc-biblioref">Fama &amp; French, 2004</a>)</span>. An investor who wants the premium must hold through those periods. The premium is not paid in advance.</p>
+<p>The same logic applies to duration. Longer-maturity government bonds have historically yielded more than short-term instruments, partly as compensation for inflation uncertainty and partly for the risk that interest rates move adversely before maturity. That compensation is not constant — the term premium turned sharply negative in the post-2008 quantitative easing period before reasserting itself in 2022 — but as a long-run average it reflects real risk bearing <span class="citation" data-cites="adrian2013">(<a href="#ref-adrian2013" role="doc-biblioref">Adrian et al., 2013</a>)</span>.</p>
+<p>Credit spread follows the same pattern with more complexity. Investment-grade corporate bonds have historically yielded more than equivalent government bonds, and high-yield bonds more still. That spread contains several components: expected default losses, unexpected default risk, liquidity premia, and cyclical vulnerability — the tendency for credit spreads to widen precisely when economic conditions are weakening and the investor’s broader portfolio is already under pressure. Friewald, Wagner, and Zechner document that a significant component of credit returns is explained by equity-like risk factors, meaning that high-yield behaves more like an equity sub-asset than a diversifying fixed-income instrument in stress periods <span class="citation" data-cites="friewald2014">(<a href="#ref-friewald2014" role="doc-biblioref">Friewald et al., 2014</a>)</span>.</p>
 <p>The starting spread level has historically been the most informative predictor of medium-horizon forward returns in high-yield credit. The chart below illustrates this relationship using annual average OAS data from 1997 to 2023. The scatter on the left shows that years beginning with wide spreads — such as 2002 and 2008 — have historically been followed by strong forward returns, while years beginning with tight spreads — such as 2006 and 2021 — have preceded weaker returns. The bar chart on the right shows the full spread history, with 700 basis points and 350 basis points as approximate reference levels for historically wide and tight conditions.</p>
 <div id="d2676cb2" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -245,15 +244,15 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>Carry across currency markets presents a similar case. The strategy of borrowing in low-yielding currencies and investing in high-yielding ones has produced positive average returns over long samples, but those returns are punctuated by sharp reversals during episodes of global risk aversion. Burnside, Eichenbaum, Kleshchelski, and Rebelo find that carry returns are strongly associated with exposure to global downside risk: the strategy earns a steady premium and suffers concentrated losses when volatility spikes <span class="citation" data-cites="burnside2011">(<a href="#ref-burnside2011" role="doc-biblioref">Burnside et al. 2011</a>)</span>. The premium is real. The pain attached to it is also real.</p>
+<p>Carry across currency markets presents a similar case. The strategy of borrowing in low-yielding currencies and investing in high-yielding ones has produced positive average returns over long samples, but those returns are punctuated by sharp reversals during episodes of global risk aversion. Burnside, Eichenbaum, Kleshchelski, and Rebelo find that carry returns are strongly associated with exposure to global downside risk: the strategy earns a steady premium and suffers concentrated losses when volatility spikes <span class="citation" data-cites="burnside2011">(<a href="#ref-burnside2011" role="doc-biblioref">Burnside et al., 2011</a>)</span>. The premium is real. The pain attached to it is also real.</p>
 <p>A useful consequence of framing premia this way is that it clarifies what should be expected in stress. A credit portfolio that has produced stable spread income for several years without a significant default cycle has not escaped the risk embedded in credit — it has simply not yet experienced the conditions under which that risk expresses itself.</p>
 </section>
 <section id="factor-premia-risk-structure-or-behavior" class="level2">
 <h2 class="anchored" data-anchor-id="factor-premia-risk-structure-or-behavior">Factor premia: risk, structure, or behavior?</h2>
 <p>Not all persistent return premiums fit cleanly into the compensation-for-risk framework. Some appear to arise from structural features of how markets are organized, from behavioral tendencies among participants, or from a combination that does not reduce to classical risk.</p>
-<p>Momentum is the clearest example of this ambiguity. The magnitude and consistency of the momentum effect across markets and asset classes is difficult to explain as pure compensation for systematic risk, since momentum portfolios have modest or negative loading on classical macro risk factors. The most credible explanations involve gradual information diffusion, institutional underreaction followed by trend-chasing, and the benchmark dynamics that cause managers to accumulate recently performing positions <span class="citation" data-cites="hong1999">(<a href="#ref-hong1999" role="doc-biblioref">Hong and Stein 1999</a>)</span>. These are behavioral and structural mechanisms — which is why momentum is also more vulnerable to sudden reversal when positioning becomes crowded and the information cascade that sustained it reverses.</p>
-<p>Value has a more contested interpretation. Whether value reflects compensation for distress risk, a behavioral tendency to overprice growth and underprice recovery, or both is still an open question <span class="citation" data-cites="fama1993 lakonishok1994">(<a href="#ref-fama1993" role="doc-biblioref">Fama and French 1993</a>; <a href="#ref-lakonishok1994" role="doc-biblioref">Lakonishok et al. 1994</a>)</span>. What is clearer is that value requires tolerance for extended underperformance — as the 2017–2020 episode illustrated, a structurally sound factor can underperform a cap-weighted index for three years or more without the underlying logic being broken.</p>
-<p>Quality — measured through profitability, earnings stability, low leverage, and capital efficiency — is arguably the most economically intuitive of the major equity factors. Asness, Frazzini, and Pedersen show that high-quality firms have historically earned excess returns not explained by their valuations <span class="citation" data-cites="asness2019">(<a href="#ref-asness2019" role="doc-biblioref">Asness et al. 2019</a>)</span>. The mechanism is plausible: investors systematically underweight stable, high-return businesses and overweight speculative ones, perhaps because the former appear boring and the latter offer lottery-like upside.</p>
+<p>Momentum is the clearest example of this ambiguity. The magnitude and consistency of the momentum effect across markets and asset classes is difficult to explain as pure compensation for systematic risk, since momentum portfolios have modest or negative loading on classical macro risk factors. The most credible explanations involve gradual information diffusion, institutional underreaction followed by trend-chasing, and the benchmark dynamics that cause managers to accumulate recently performing positions <span class="citation" data-cites="hong1999">(<a href="#ref-hong1999" role="doc-biblioref">Hong &amp; Stein, 1999</a>)</span>. These are behavioral and structural mechanisms — which is why momentum is also more vulnerable to sudden reversal when positioning becomes crowded and the information cascade that sustained it reverses.</p>
+<p>Value has a more contested interpretation. Whether value reflects compensation for distress risk, a behavioral tendency to overprice growth and underprice recovery, or both is still an open question <span class="citation" data-cites="fama1993 lakonishok1994">(<a href="#ref-fama1993" role="doc-biblioref">Fama &amp; French, 1993</a>; <a href="#ref-lakonishok1994" role="doc-biblioref">Lakonishok et al., 1994</a>)</span>. What is clearer is that value requires tolerance for extended underperformance — as the 2017–2020 episode illustrated, a structurally sound factor can underperform a cap-weighted index for three years or more without the underlying logic being broken.</p>
+<p>Quality — measured through profitability, earnings stability, low leverage, and capital efficiency — is arguably the most economically intuitive of the major equity factors. Asness, Frazzini, and Pedersen show that high-quality firms have historically earned excess returns not explained by their valuations <span class="citation" data-cites="asness2019">(<a href="#ref-asness2019" role="doc-biblioref">Asness et al., 2019</a>)</span>. The mechanism is plausible: investors systematically underweight stable, high-return businesses and overweight speculative ones, perhaps because the former appear boring and the latter offer lottery-like upside.</p>
 <p>The table below summarizes the major factor premia alongside their approximate historical magnitudes, proposed mechanisms, and primary regime vulnerabilities. The mechanism column matters as much as the premium column: a factor whose return reflects durable risk bearing will behave differently from one whose return reflects behavioral mispricing, and the two should not be managed identically.</p>
 <div id="0c91217a" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
@@ -285,7 +284,7 @@ div.csl-indent {
 </section>
 <section id="risk-parity-the-right-insight-with-the-wrong-regime-assumptions" class="level2">
 <h2 class="anchored" data-anchor-id="risk-parity-the-right-insight-with-the-wrong-regime-assumptions">Risk parity: the right insight with the wrong regime assumptions</h2>
-<p>Risk parity takes the risk budgeting logic to its natural conclusion: if the goal is to equalize risk contributions across asset classes, and if lower-volatility assets such as government bonds have historically offered adequate risk-adjusted returns, then a portfolio that levers those assets to match equity-like volatility and combines them in a risk-equalized structure should offer better diversification without sacrificing expected return. Asness, Frazzini, and Pedersen provide the theoretical foundation: because many investors cannot or will not use leverage, safer assets are systematically underpriced on a risk-adjusted basis, and risk parity exploits this mismatch <span class="citation" data-cites="asness2012">(<a href="#ref-asness2012" role="doc-biblioref">Asness et al. 2012</a>)</span>.</p>
+<p>Risk parity takes the risk budgeting logic to its natural conclusion: if the goal is to equalize risk contributions across asset classes, and if lower-volatility assets such as government bonds have historically offered adequate risk-adjusted returns, then a portfolio that levers those assets to match equity-like volatility and combines them in a risk-equalized structure should offer better diversification without sacrificing expected return. Asness, Frazzini, and Pedersen provide the theoretical foundation: because many investors cannot or will not use leverage, safer assets are systematically underpriced on a risk-adjusted basis, and risk parity exploits this mismatch <span class="citation" data-cites="asness2012">(<a href="#ref-asness2012" role="doc-biblioref">Asness et al., 2012</a>)</span>.</p>
 <p>This is an important insight. The strategy performed well through the disinflationary 1985–2020 period, demonstrating in practice that nominal balance and risk balance are genuinely different things. But the strategy depends on conditions that should be stated explicitly rather than assumed to be permanent.</p>
 <p>The stock-bond correlation chart below shows the full history of this relationship since 1952. The correlation was positive through the inflationary 1960s and 1970s — a period in which holding both equities and bonds simultaneously provided little diversification because both were affected by the same inflation shock. The correlation turned persistently negative through the disinflationary 1990s and 2000s, creating the diversification environment in which risk parity thrived. In 2022, as inflation returned and central banks tightened aggressively, the correlation turned sharply positive again — bonds and equities fell simultaneously, leverage amplified losses, and the strategy that had appeared robustly diversified proved to be contingent on a macro regime that had reversed.</p>
 <div id="262322ae" class="cell" data-execution_count="7">
@@ -311,48 +310,48 @@ div.csl-indent {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-adrian2013" class="csl-entry" role="listitem">
-Adrian, Tobias, Richard K. Crump, and Emanuel Moench. 2013. <span>“Pricing the Term Structure with Linear Regressions.”</span> <em>Journal of Financial Economics</em> 110 (1): 110–38.
+Adrian, T., Crump, R. K., &amp; Moench, E. (2013). Pricing the term structure with linear regressions. <em>Journal of Financial Economics</em>, <em>110</em>(1), 110–138.
 </div>
 <div id="ref-aqr_riskparity" class="csl-entry" role="listitem">
-AQR. n.d. <em>Can Risk Parity Outperform If Yields Rise?</em> <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/AQR-Can-Risk-Parity-Outperform-If-Yields-Rise.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/AQR-Can-Risk-Parity-Outperform-If-Yields-Rise.pdf</a>.
+AQR. (n.d.). <em>Can risk parity outperform if yields rise?</em> Retrieved <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/AQR-Can-Risk-Parity-Outperform-If-Yields-Rise.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/AQR-Can-Risk-Parity-Outperform-If-Yields-Rise.pdf</a>
 </div>
 <div id="ref-asness2012" class="csl-entry" role="listitem">
-Asness, Clifford S., Andrea Frazzini, and Lasse H. Pedersen. 2012. <span>“Leverage Aversion and Risk Parity.”</span> <em>Financial Analysts Journal</em> 68 (1): 47–59. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Leverage-Aversion-and-Risk-Parity.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Leverage-Aversion-and-Risk-Parity.pdf</a>.
+Asness, C. S., Frazzini, A., &amp; Pedersen, L. H. (2012). Leverage aversion and risk parity. <em>Financial Analysts Journal</em>, <em>68</em>(1), 47–59. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Leverage-Aversion-and-Risk-Parity.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Leverage-Aversion-and-Risk-Parity.pdf</a>
 </div>
 <div id="ref-asness2019" class="csl-entry" role="listitem">
-Asness, Clifford S., Andrea Frazzini, and Lasse H. Pedersen. 2019. <span>“Quality Minus Junk.”</span> <em>Review of Accounting Studies</em> 24: 34–112. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf</a>.
+Asness, C. S., Frazzini, A., &amp; Pedersen, L. H. (2019). Quality minus junk. <em>Review of Accounting Studies</em>, <em>24</em>, 34–112. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf</a>
 </div>
 <div id="ref-asness2013" class="csl-entry" role="listitem">
-Asness, Clifford S., Tobias J. Moskowitz, and Lasse H. Pedersen. 2013. <span>“Value and Momentum Everywhere.”</span> <em>The Journal of Finance</em> 68 (3): 929–85. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf</a>.
+Asness, C. S., Moskowitz, T. J., &amp; Pedersen, L. H. (2013). Value and momentum everywhere. <em>The Journal of Finance</em>, <em>68</em>(3), 929–985. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf</a>
 </div>
 <div id="ref-burnside2011" class="csl-entry" role="listitem">
-Burnside, Craig, Martin Eichenbaum, Isaac Kleshchelski, and Sergio Rebelo. 2011. <em>Carry Trades and Risk</em>. No. 17278. National Bureau of Economic Research. <a href="https://www.nber.org/system/files/working_papers/w17278/w17278.pdf">https://www.nber.org/system/files/working_papers/w17278/w17278.pdf</a>.
+Burnside, C., Eichenbaum, M., Kleshchelski, I., &amp; Rebelo, S. (2011). <em>Carry trades and risk</em> (No. 17278). National Bureau of Economic Research. <a href="https://www.nber.org/system/files/working_papers/w17278/w17278.pdf">https://www.nber.org/system/files/working_papers/w17278/w17278.pdf</a>
 </div>
 <div id="ref-carhart1997" class="csl-entry" role="listitem">
-Carhart, Mark M. 1997. <span>“On Persistence in Mutual Fund Performance.”</span> <em>The Journal of Finance</em> 52 (1): 57–82.
+Carhart, M. M. (1997). On persistence in mutual fund performance. <em>The Journal of Finance</em>, <em>52</em>(1), 57–82.
 </div>
 <div id="ref-fama1993" class="csl-entry" role="listitem">
-Fama, Eugene F., and Kenneth R. French. 1993. <span>“Common Risk Factors in the Returns on Stocks and Bonds.”</span> <em>Journal of Financial Economics</em> 33 (1): 3–56.
+Fama, E. F., &amp; French, K. R. (1993). Common risk factors in the returns on stocks and bonds. <em>Journal of Financial Economics</em>, <em>33</em>(1), 3–56.
 </div>
 <div id="ref-fama2004" class="csl-entry" role="listitem">
-Fama, Eugene F., and Kenneth R. French. 2004. <span>“The Capital Asset Pricing Model: Theory and Evidence.”</span> <em>Journal of Economic Perspectives</em> 18 (3): 25–46. <a href="https://www.jstor.org/stable/pdf/3216805.pdf">https://www.jstor.org/stable/pdf/3216805.pdf</a>.
+Fama, E. F., &amp; French, K. R. (2004). The capital asset pricing model: Theory and evidence. <em>Journal of Economic Perspectives</em>, <em>18</em>(3), 25–46. <a href="https://www.jstor.org/stable/pdf/3216805.pdf">https://www.jstor.org/stable/pdf/3216805.pdf</a>
 </div>
 <div id="ref-friewald2014" class="csl-entry" role="listitem">
-Friewald, Nils, Christian Wagner, and Josef Zechner. 2014. <span>“The Cross-Section of Credit Risk Premia and Equity Returns.”</span> <em>The Journal of Finance</em> 69 (6): 2419–69. <a href="https://www.jstor.org/stable/43611073">https://www.jstor.org/stable/43611073</a>.
+Friewald, N., Wagner, C., &amp; Zechner, J. (2014). The cross-section of credit risk premia and equity returns. <em>The Journal of Finance</em>, <em>69</em>(6), 2419–2469. <a href="https://www.jstor.org/stable/43611073">https://www.jstor.org/stable/43611073</a>
 </div>
 <div id="ref-hong1999" class="csl-entry" role="listitem">
-Hong, Harrison, and Jeremy C. Stein. 1999. <span>“A Unified Theory of Underreaction, Momentum Trading, and Overreaction in Asset Markets.”</span> <em>The Journal of Finance</em> 54 (6): 2143–84.
+Hong, H., &amp; Stein, J. C. (1999). A unified theory of underreaction, momentum trading, and overreaction in asset markets. <em>The Journal of Finance</em>, <em>54</em>(6), 2143–2184.
 </div>
 <div id="ref-hurst_riskparity" class="csl-entry" role="listitem">
-Hurst, Brian, Yao Hua Ooi, and Lasse H. Pedersen. n.d. <em>Understanding Risk Parity</em>. AQR White Paper. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/Understanding-Risk-Parity.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/Understanding-Risk-Parity.pdf</a>.
+Hurst, B., Ooi, Y. H., &amp; Pedersen, L. H. (n.d.). <em>Understanding risk parity</em>. AQR White Paper. Retrieved <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/Understanding-Risk-Parity.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/Understanding-Risk-Parity.pdf</a>
 </div>
 <div id="ref-lakonishok1994" class="csl-entry" role="listitem">
-Lakonishok, Josef, Andrei Shleifer, and Robert W. Vishny. 1994. <span>“Contrarian Investment, Extrapolation, and Risk.”</span> <em>The Journal of Finance</em> 49 (5): 1541–78. <a href="https://www.jstor.org/stable/2329262">https://www.jstor.org/stable/2329262</a>.
+Lakonishok, J., Shleifer, A., &amp; Vishny, R. W. (1994). Contrarian investment, extrapolation, and risk. <em>The Journal of Finance</em>, <em>49</em>(5), 1541–1578. <a href="https://www.jstor.org/stable/2329262">https://www.jstor.org/stable/2329262</a>
 </div>
 <div id="ref-sharpe1964" class="csl-entry" role="listitem">
-Sharpe, William F. 1964. <span>“Capital Asset Prices: A Theory of Market Equilibrium Under Conditions of Risk.”</span> <em>The Journal of Finance</em> 19 (3): 425–42. <a href="https://www.jstor.org/stable/2977928">https://www.jstor.org/stable/2977928</a>.
+Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. <em>The Journal of Finance</em>, <em>19</em>(3), 425–442. <a href="https://www.jstor.org/stable/2977928">https://www.jstor.org/stable/2977928</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -760,4 +759,5 @@ Sharpe, William F. 1964. <span>“Capital Asset Prices: A Theory of Market Equil
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

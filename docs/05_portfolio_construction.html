@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,6 +90,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -112,43 +114,40 @@ div.csl-indent {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Preface</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-framework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Framework</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-framework">    
-        <li>
-    <a class="dropdown-item" href="./01_markets_prices_expectations.html">
- <span class="dropdown-text">1. Markets, prices, and expectations</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./01_markets_prices_expectations.html"> 
+<span class="menu-text">1. Markets &amp; Prices</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./02_speculation_excess_crowds.html">
- <span class="dropdown-text">2. Speculation, excess, and crowds</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./02_speculation_excess_crowds.html"> 
+<span class="menu-text">2. Speculation</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./03_signals_forecasting_outperformance.html">
- <span class="dropdown-text">3. Signals, forecasting, and outperformance</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./03_signals_forecasting_outperformance.html"> 
+<span class="menu-text">3. Signals</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./04_return_sources_factor_structure.html">
- <span class="dropdown-text">4. Return sources and factor structure</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./04_return_sources_factor_structure.html"> 
+<span class="menu-text">4. Return Sources</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./05_portfolio_construction.html">
- <span class="dropdown-text">5. Portfolio construction</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./05_portfolio_construction.html" aria-current="page"> 
+<span class="menu-text">5. Portfolio Construction</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./06_expected_returns.html">
- <span class="dropdown-text">6. Expected returns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./06_expected_returns.html"> 
+<span class="menu-text">6. Expected Returns</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./07_core_allocation_active_programs.html">
- <span class="dropdown-text">7. Core allocation to active programs</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./07_core_allocation_active_programs.html"> 
+<span class="menu-text">7. Core Allocation</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./08_strategy_implementation.html"> 
+<span class="menu-text">8. Strategy</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -162,9 +161,9 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#portfolios-are-systems-of-covarying-exposures" id="toc-portfolios-are-systems-of-covarying-exposures" class="nav-link active" data-scroll-target="#portfolios-are-systems-of-covarying-exposures">Portfolios are systems of covarying exposures</a></li>
   <li><a href="#correlation-is-backward-looking-and-regime-dependent" id="toc-correlation-is-backward-looking-and-regime-dependent" class="nav-link" data-scroll-target="#correlation-is-backward-looking-and-regime-dependent">Correlation is backward-looking and regime-dependent</a></li>
   <li><a href="#position-sizing-determines-how-much-of-an-edge-is-actually-captured" id="toc-position-sizing-determines-how-much-of-an-edge-is-actually-captured" class="nav-link" data-scroll-target="#position-sizing-determines-how-much-of-an-edge-is-actually-captured">Position sizing determines how much of an edge is actually captured</a></li>
@@ -199,7 +198,7 @@ div.csl-indent {
 <p>Identifying return sources is necessary but not sufficient. A portfolio built from well-understood return sources can still fail if the positions are sized incorrectly, if the exposures are more correlated than they appear, if the path of returns is too difficult to hold through, or if concentration accumulates silently through market drift. Portfolio construction is the activity that addresses these problems. It is not a secondary layer added after the investment work is done. It is part of the investment work.</p>
 <section id="portfolios-are-systems-of-covarying-exposures" class="level2">
 <h2 class="anchored" data-anchor-id="portfolios-are-systems-of-covarying-exposures">Portfolios are systems of covarying exposures</h2>
-<p>Markowitz’s foundational insight was that the relevant measure for evaluating any asset is not its expected return and variance in isolation, but its contribution to the distribution of outcomes for the portfolio as a whole <span class="citation" data-cites="markowitz1952">(<a href="#ref-markowitz1952" role="doc-biblioref">Markowitz 1952</a>)</span>. An asset with high expected return but strong positive covariance with existing holdings may add less value than its standalone characteristics suggest. An asset with modest expected return and low or negative covariance with the rest of the portfolio may add considerably more. This is the central reason why portfolio construction cannot be reduced to ranking assets by expected return and allocating proportionally.</p>
+<p>Markowitz’s foundational insight was that the relevant measure for evaluating any asset is not its expected return and variance in isolation, but its contribution to the distribution of outcomes for the portfolio as a whole <span class="citation" data-cites="markowitz1952">(<a href="#ref-markowitz1952" role="doc-biblioref">Markowitz, 1952</a>)</span>. An asset with high expected return but strong positive covariance with existing holdings may add less value than its standalone characteristics suggest. An asset with modest expected return and low or negative covariance with the rest of the portfolio may add considerably more. This is the central reason why portfolio construction cannot be reduced to ranking assets by expected return and allocating proportionally.</p>
 <p>The practical implication is that investors who evaluate assets one at a time — forming a thesis at the security level and then adding the position to the portfolio as if it were entering a container — are systematically underestimating concentration risk. A portfolio is not a container. It is a system of covarying exposures whose behavior under stress is frequently different from the sum of its parts evaluated separately.</p>
 <p>A concrete example makes this visible. An equity portfolio with forty positions across eight sectors may appear to have substantial breadth. If twenty-five of those forty positions are growth-oriented technology businesses — labeled as software, semiconductors, internet platforms, or tech-enabled industrials — the actual number of distinct exposures is far smaller than the position count suggests. A repricing of long-duration growth assets, as occurred through 2022 when U.S. ten-year real yields rose approximately 250 basis points, can damage the entire portfolio simultaneously regardless of how many ticker symbols it contains. The concentration was in the discount rate sensitivity of the underlying businesses, not in their sector labels.</p>
 <p>Measuring genuine diversification requires looking through surface labels to the underlying factor exposures and asking whether those exposures are correlated in the stress states that matter most. Two assets are genuinely diversifying if they provide return through different mechanisms, fail under different conditions, and do not both depend on the same macro conditions persisting. By that standard, the set of genuinely uncorrelated return sources available in most investable universes is considerably smaller than the number of available asset classes.</p>
@@ -225,7 +224,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="position-sizing-determines-how-much-of-an-edge-is-actually-captured">Position sizing determines how much of an edge is actually captured</h2>
 <p>If concentration and correlation are taken seriously, position sizing becomes one of the most consequential decisions in portfolio construction — and one that receives far less analytical attention than asset selection.</p>
 <p>Size determines how much of the expected return can actually be captured and how much damage an error can do. A correct thesis expressed at 1 percent of the portfolio produces a negligible contribution to return even if the position doubles. The same thesis expressed at 20 percent produces a material outcome in both directions. This asymmetry means that sizing errors are often more consequential than analytical errors, particularly in concentrated portfolios where one or two mistakes can overwhelm the contribution of everything else.</p>
-<p>Several frameworks exist for thinking about position sizing rigorously. Kelly-criterion-based approaches size positions in proportion to the ratio of expected edge to variance, maximizing long-run compound growth — but they are extremely sensitive to estimation error and produce sizes that are too aggressive for most institutional constraints <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp 2006</a>)</span>. Mean-variance optimization provides a theoretically optimal size for a given set of return and covariance estimates, but it is similarly sensitive to input error and tends to concentrate the entire portfolio in a small number of assets when inputs are uncertain — a problem known as corner solutions <span class="citation" data-cites="markowitz1952">(<a href="#ref-markowitz1952" role="doc-biblioref">Markowitz 1952</a>)</span>.</p>
+<p>Several frameworks exist for thinking about position sizing rigorously. Kelly-criterion-based approaches size positions in proportion to the ratio of expected edge to variance, maximizing long-run compound growth — but they are extremely sensitive to estimation error and produce sizes that are too aggressive for most institutional constraints <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp, 2006</a>)</span>. Mean-variance optimization provides a theoretically optimal size for a given set of return and covariance estimates, but it is similarly sensitive to input error and tends to concentrate the entire portfolio in a small number of assets when inputs are uncertain — a problem known as corner solutions <span class="citation" data-cites="markowitz1952">(<a href="#ref-markowitz1952" role="doc-biblioref">Markowitz, 1952</a>)</span>.</p>
 <p>In practice, thoughtful portfolio construction involves a pragmatic combination: a base sizing framework that reflects conviction and factor contribution, modified by explicit constraints on maximum position size, maximum factor concentration, and minimum liquidity buffer. What distinguishes a well-constructed portfolio from a poorly constructed one is not which framework is used but whether the sizing decisions are made explicitly, with awareness of how wrong they could be, rather than implicitly as a residual of the selection process.</p>
 <p>The table below makes the sizing decision concrete. For a given strategy with known volatility and a win-loss ratio of 1.5 — meaning winning positions are on average 50 percent larger than losing ones — the required hit rate to be profitable is fixed regardless of position size. What changes with size is the portfolio volatility contribution and the position-level loss required to breach a 2-standard-deviation portfolio event. These numbers show why a position that is analytically identical can be acceptable at 2 percent and damaging at 15 percent.</p>
 <div id="912ec993" class="cell" data-execution_count="3">
@@ -243,8 +242,8 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="path-risk-the-portfolio-that-cannot-be-held">Path risk: the portfolio that cannot be held</h2>
 <p>The most practically important concept in portfolio construction that receives the least theoretical attention is path risk — the risk not that the portfolio produces a poor terminal outcome, but that the experience of holding it through an adverse period forces an exit before the terminal outcome is realized.</p>
 <p>Portfolios are not evaluated at a single future point in time. They are lived through continuously. Investors face interim mark-to-market losses, client redemptions, committee pressure, investment policy constraints, and the psychological difficulty of maintaining conviction through extended drawdowns. A portfolio that is theoretically optimal over a ten-year horizon but produces a 40 percent drawdown in the third year may fail in practice — not because the thesis was wrong but because the drawdown exceeded the tolerance for loss, triggered redemptions, or forced a change in the investment process at exactly the wrong moment.</p>
-<p>Volatility measures the dispersion of outcomes around an average. Drawdown measures the lived experience of loss — the peak-to-trough decline and the duration for which capital is below its previous high. For most investors, drawdown is the more practically relevant risk. A portfolio with moderate volatility but a long, grinding underwater period can be extremely difficult to hold, particularly when the recovery requires continuing to own positions that have already been painful. Ilmanen, Israel, Moskowitz, Thapar, and van den Heuvel document this empirically: across a century of drawdown episodes, strategies that appeared similar on average-return metrics differed substantially in their drawdown profiles and in the behavioral challenges they created for investors trying to maintain allocation through stress <span class="citation" data-cites="ilmanen2018">(<a href="#ref-ilmanen2018" role="doc-biblioref">Ilmanen et al. 2018</a>)</span>.</p>
-<p>The Kelly criterion literature makes a related point. At full Kelly sizing, the strategy maximizes long-run compound growth in expectation, but the variance of the path is large enough that most individual realizations fall well short of the expected compound return. Fractional Kelly — sizing at half or a third of the theoretically optimal size — sacrifices some expected return but substantially improves the practical survivability of the strategy <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp 2006</a>)</span>. The reduction in expected return is often smaller than the reduction in drawdown severity.</p>
+<p>Volatility measures the dispersion of outcomes around an average. Drawdown measures the lived experience of loss — the peak-to-trough decline and the duration for which capital is below its previous high. For most investors, drawdown is the more practically relevant risk. A portfolio with moderate volatility but a long, grinding underwater period can be extremely difficult to hold, particularly when the recovery requires continuing to own positions that have already been painful. Ilmanen, Israel, Moskowitz, Thapar, and van den Heuvel document this empirically: across a century of drawdown episodes, strategies that appeared similar on average-return metrics differed substantially in their drawdown profiles and in the behavioral challenges they created for investors trying to maintain allocation through stress <span class="citation" data-cites="ilmanen2018">(<a href="#ref-ilmanen2018" role="doc-biblioref">Ilmanen et al., 2018</a>)</span>.</p>
+<p>The Kelly criterion literature makes a related point. At full Kelly sizing, the strategy maximizes long-run compound growth in expectation, but the variance of the path is large enough that most individual realizations fall well short of the expected compound return. Fractional Kelly — sizing at half or a third of the theoretically optimal size — sacrifices some expected return but substantially improves the practical survivability of the strategy <span class="citation" data-cites="thorp2006">(<a href="#ref-thorp2006" role="doc-biblioref">Thorp, 2006</a>)</span>. The reduction in expected return is often smaller than the reduction in drawdown severity.</p>
 <p>The chart below illustrates this using two simulated portfolios designed to have similar annualized Sharpe ratios. Portfolio A experiences a sharp but short crisis — the kind of drawdown that is painful but resolves quickly, allowing the investor to recover and continue. Portfolio B experiences a long shallow drawdown lasting several years. From a summary statistics perspective, both look similar. From a practical holding perspective, they are very different: Portfolio B tests institutional patience for a period that is long enough to trigger mandate reviews, client redemptions, and personnel changes. The probability that the portfolio is abandoned before the recovery occurs is materially higher for Portfolio B despite identical long-run statistics.</p>
 <div id="b29987a4" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -288,25 +287,25 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>This property — that the portfolio of signals is better than the average signal — is the systematic equivalent of what Markowitz observed about individual assets, and it is the most important structural reason for combining multiple signals rather than concentrating on the single strongest one. The implication for a research process is that signal evaluation should always include portfolio context. A signal that is only marginally attractive on a standalone basis may still deserve capital if its correlation to existing signals is low. A signal that looks impressive in isolation may deserve a smaller allocation if it introduces concentrated exposure to a risk the rest of the portfolio already carries. How much a signal improves the risk-adjusted return of the overall portfolio — its incremental contribution — matters more than its standalone performance, and those two quantities frequently point in opposite directions <span class="citation" data-cites="asness2013">(<a href="#ref-asness2013" role="doc-biblioref">Asness et al. 2013</a>)</span>.</p>
+<p>This property — that the portfolio of signals is better than the average signal — is the systematic equivalent of what Markowitz observed about individual assets, and it is the most important structural reason for combining multiple signals rather than concentrating on the single strongest one. The implication for a research process is that signal evaluation should always include portfolio context. A signal that is only marginally attractive on a standalone basis may still deserve capital if its correlation to existing signals is low. A signal that looks impressive in isolation may deserve a smaller allocation if it introduces concentrated exposure to a risk the rest of the portfolio already carries. How much a signal improves the risk-adjusted return of the overall portfolio — its incremental contribution — matters more than its standalone performance, and those two quantities frequently point in opposite directions <span class="citation" data-cites="asness2013">(<a href="#ref-asness2013" role="doc-biblioref">Asness et al., 2013</a>)</span>.</p>
 <p>The portfolio construction principles in this section — understanding the system rather than the collection, recognizing that correlation rises in stress, sizing explicitly rather than implicitly, designing for path survivability, rebalancing to maintain intended structure, and combining signals for their portfolio contribution — provide the practical foundation for translating the return sources identified in section 4 into a portfolio that can actually be held through the conditions it will encounter. Section 6 then addresses the remaining question: what should that portfolio be expected to return from here?</p>
 
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-asness2013" class="csl-entry" role="listitem">
-Asness, Clifford S., Tobias J. Moskowitz, and Lasse H. Pedersen. 2013. <span>“Value and Momentum Everywhere.”</span> <em>The Journal of Finance</em> 68 (3): 929–85. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf</a>.
+Asness, C. S., Moskowitz, T. J., &amp; Pedersen, L. H. (2013). Value and momentum everywhere. <em>The Journal of Finance</em>, <em>68</em>(3), 929–985. <a href="https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf">https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Value-and-Momentum-Everywhere.pdf</a>
 </div>
 <div id="ref-ilmanen2018" class="csl-entry" role="listitem">
-Ilmanen, Antti, Ronen Israel, Tobias J. Moskowitz, Ashwin Thapar, and Oscar van den Heuvel. 2018. <em>Diversification During a Century of Drawdowns</em>. AQR Alternative Thinking. <a href="https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking-3Q18---Diversification-During-a-Century-of-Drawdowns.pdf">https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking-3Q18---Diversification-During-a-Century-of-Drawdowns.pdf</a>.
+Ilmanen, A., Israel, R., Moskowitz, T. J., Thapar, A., &amp; Heuvel, O. van den. (2018). <em>Diversification during a century of drawdowns</em>. AQR Alternative Thinking. <a href="https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking-3Q18---Diversification-During-a-Century-of-Drawdowns.pdf">https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking-3Q18---Diversification-During-a-Century-of-Drawdowns.pdf</a>
 </div>
 <div id="ref-markowitz1952" class="csl-entry" role="listitem">
-Markowitz, Harry. 1952. <span>“Portfolio Selection.”</span> <em>The Journal of Finance</em> 7 (1): 77–91. <a href="https://www.jstor.org/stable/pdf/2975974.pdf">https://www.jstor.org/stable/pdf/2975974.pdf</a>.
+Markowitz, H. (1952). Portfolio selection. <em>The Journal of Finance</em>, <em>7</em>(1), 77–91. <a href="https://www.jstor.org/stable/pdf/2975974.pdf">https://www.jstor.org/stable/pdf/2975974.pdf</a>
 </div>
 <div id="ref-thorp2006" class="csl-entry" role="listitem">
-Thorp, Edward O. 2006. <span>“The Kelly Criterion in Blackjack, Sports Betting, and the Stock Market.”</span> In <em>Handbook of Asset and Liability Management</em>. North-Holland. <a href="https://www.eecs.harvard.edu/cs286r/courses/fall12/papers/Thorpe_KellyCriterion2007.pdf">https://www.eecs.harvard.edu/cs286r/courses/fall12/papers/Thorpe_KellyCriterion2007.pdf</a>.
+Thorp, E. O. (2006). The kelly criterion in blackjack, sports betting, and the stock market. In <em>Handbook of asset and liability management</em>. North-Holland. <a href="https://www.eecs.harvard.edu/cs286r/courses/fall12/papers/Thorpe_KellyCriterion2007.pdf">https://www.eecs.harvard.edu/cs286r/courses/fall12/papers/Thorpe_KellyCriterion2007.pdf</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -714,4 +713,5 @@ Thorp, Edward O. 2006. <span>“The Kelly Criterion in Blackjack, Sports Betting
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
