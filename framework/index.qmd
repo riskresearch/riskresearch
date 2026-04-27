@@ -7,36 +7,34 @@ date: today
 
 ## About this document
 
-This document is a research framework for systematic multi-asset investing. It attempts to build a rigorous intellectual foundation for the kind of investment process that takes markets seriously — one that respects the difficulty of outperformance, understands where returns actually come from, and designs portfolios that can survive the conditions they will realistically encounter.
+This document builds a rigorous foundation for the kind of investment process that takes markets seriously — one that respects the difficulty of outperformance, understands where returns actually come from, and designs portfolios that can survive the conditions they will realistically encounter.
 
-The framework draws on work from Fama, Cochrane, Campbell and Shiller, Ilmanen, Asness and colleagues at AQR, Research Affiliates, and others who have built the empirical and theoretical foundations that serious investment practice now rests on. It also draws on practical experience of risk management and portfolio oversight in live markets. The combination matters: theory without implementation tends toward abstraction, and implementation without theory tends toward overconfidence in backtests.
+It draws on work from Fama, Cochrane, Campbell and Shiller, Ilmanen, Asness and colleagues at AQR, and Research Affiliates, alongside practical experience of risk management and portfolio oversight in live markets. Theory without implementation tends toward abstraction. Implementation without theory tends toward overconfidence in backtests. The framework attempts to hold both together.
 
 ## Structure
 
-The framework is organized in seven sections that build on each other toward a single destination: a documented systematic strategy with an honest account of what it does, what it earns, and where it is likely to fail.
+Seven sections build on each other toward a single destination: a documented systematic strategy with an honest account of what it does, what it earns, and where it is likely to fail.
 
-**Section 1** establishes what a market price actually is, why prices embed expectations rather than reflect value directly, and how crowd dynamics can drive prices far from any reasonable fundamental anchor. It closes with the three questions a sound investment view must answer — questions that the rest of the framework is designed to help answer rigorously.
+**Section 1** establishes what prices are, why they embed expectations rather than reflect value directly, and how crowd dynamics can drive prices far from any reasonable fundamental anchor.
 
-**Section 2** examines how investors try to form an edge through fundamental and price-based signals, why most signals decay after discovery, why the structural arithmetic of active management makes persistent outperformance rare in aggregate, and where analytical work still adds genuine value.
+**Section 2** examines how investors try to form an edge, why most signals decay after discovery, and where analytical work still adds genuine value despite the structural difficulty of persistent outperformance.
 
-**Section 3** develops a taxonomy of return sources — market beta, systematic factor premia, and alpha — and connects it to the modern portfolio methods that attempt to harvest those sources more deliberately. It explains what risk premia are, why they persist, and what conditions make each one vulnerable.
+**Section 3** develops a taxonomy of return sources — market beta, systematic factor premia, and alpha — and connects it to the methods that attempt to harvest those sources more deliberately.
 
-**Section 4** addresses portfolio construction directly: how exposures should be sized and combined, why diversification is a structural property rather than a position count, why correlation rises in stress when it matters most, and why the path of returns is as important as their terminal level.
+**Section 4** addresses portfolio construction: how exposures should be sized and combined, why diversification is a structural property rather than a position count, and why path risk matters as much as terminal return.
 
-**Section 5** grounds expected return estimation in observable arithmetic — starting valuation, current carry, and regime conditioning — rather than in historical averages or narrative optimism, and explains what the most common forecasting errors have in common.
+**Section 5** grounds expected return estimation in observable arithmetic — starting valuation, current carry, and regime conditioning — rather than in historical averages or narrative optimism.
 
-**Section 6** draws the practical conclusion on portfolio organization: strategic allocation comes first, active programs require explicit justification against a rigorous passive baseline, and the failure modes of core-plus-active structures are as important to understand as their theoretical properties.
+**Section 6** addresses portfolio organization: strategic allocation comes first, active programs require explicit justification against a rigorous passive baseline, and the failure modes of core-plus-active structures matter as much as their theoretical properties.
 
-**Section 7** applies the framework to a specific systematic strategy — the ES Core Relative Allocation, deployed live on Darwinex Zero — presenting the backtest evidence, robustness analysis, regime decomposition, and live track record against the standards the preceding sections established.
+**Section 7** applies the framework to the ES Core Relative Allocation — a systematic futures strategy deployed live on Darwinex Zero — presenting backtest evidence, robustness analysis, regime decomposition, and live track record against the standards the preceding sections established.
 
 ## The connected strategy
 
-The ES Core Relative Allocation maintains U.S. large-cap equity futures as a permanent core and dynamically allocates up to 50 percent of the portfolio to alternative futures instruments based on their risk-adjusted performance relative to that core. The strategy trades six USD-denominated futures contracts — ES, NQ, RTY, GC, SI, and ZN — selected for their liquidity, asset class breadth, and availability on the Darwinex Zero platform. It is deployed live under the ticker UJNU.
+The ES Core Relative Allocation maintains U.S. large-cap equity futures as a permanent core and dynamically allocates up to 50 percent of the portfolio to alternative futures instruments based on their risk-adjusted performance relative to that core. It trades six USD-denominated futures contracts — ES, NQ, RTY, GC, SI, and ZN — and is deployed live on Darwinex Zero under the ticker UJNU.
 
-The purpose of maintaining both documents together is to make the connection between research and implementation explicit. A strategy without a framework is a backtest with no explanation of why it should continue to work. A framework without a strategy is a literature review with no practical consequence. Together they form a documented investment process that can be evaluated, challenged, and improved on the basis of evidence rather than narrative.
+A strategy without a framework is a backtest with no explanation of why it should continue to work. A framework without a strategy is a literature review with no practical consequence. Together they form a documented investment process that can be evaluated and improved on the basis of evidence.
 
-## A note on references and charts
+## References and charts
 
-All citations refer to academic papers, working papers, or practitioner research that are publicly available or widely accessible through standard academic channels. Where a paper is cited in support of a specific empirical claim, the reader is encouraged to consult the original source. The framework uses the literature selectively — to support load-bearing claims rather than to demonstrate familiarity with it.
-
-Charts throughout the sections are drawn from publicly available data sources including the Ken French Data Library, Robert Shiller's data series, FRED, Yahoo Finance, and S&P Dow Jones Indices publications. Data sources and construction methodology are noted in each caption. Several chart propositions remain as clearly marked placeholders where the required data requires either live strategy outputs or constituent-level datasets that are not yet available. These are identified explicitly in each section and will be populated as the strategy analysis is completed.
+Citations refer to publicly available academic papers, working papers, and practitioner research. Charts are drawn from the Ken French Data Library, Robert Shiller's data series, FRED, Yahoo Finance, and S&P Dow Jones Indices publications. Several chart propositions remain as marked placeholders where the required data is not yet available and will be populated as the strategy analysis is completed.
