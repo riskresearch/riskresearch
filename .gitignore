@@ -15,13 +15,8 @@ env/
 # Private research
 ongoingresearch/
 
-# Strategy code (private)
-strategy/strategy.py
-strategy/outputs/
-strategy/montecarlo_sensitivity.py
-strategy/sensitivity_analysis.py
-strategy/regime_decomposition.py
-strategy/factor_attribution.py
+# Strategy — private
+strategy/
 
 # Large data files
 framework/data/shiller_ie_data.xls
