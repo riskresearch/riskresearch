@@ -1,11 +1,28 @@
+# Python
 .ipynb_checkpoints/
-.vscode/
 __pycache__/
 *.pyc
 .venv/
 env/
-ongoingresearch/
-/.quarto/
+
+# Editor
+.vscode/
+
+# Quarto intermediates
+.quarto/
 **/*.quarto_ipynb
-framework/
-strategy/
+
+# Private research
+ongoingresearch/
+
+# Strategy code (private)
+strategy/strategy.py
+strategy/outputs/
+strategy/montecarlo_sensitivity.py
+strategy/sensitivity_analysis.py
+strategy/regime_decomposition.py
+strategy/factor_attribution.py
+
+# Large data files
+framework/data/shiller_ie_data.xls
+framework/data/BAMLH0A0HYM2.csv
