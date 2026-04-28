@@ -7,3 +7,5 @@ env/
 ongoingresearch/
 /.quarto/
 **/*.quarto_ipynb
+framework/
+strategy/
