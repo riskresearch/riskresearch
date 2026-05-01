@@ -76,11 +76,21 @@ def chart_fee_drag() -> None:
 
     # Left: cumulative wealth
     ax = axes[0]
+    terminal_vals = []
     for label, fee, color, ls in scenarios:
         net_ret = gross_ret - fee
         wealth  = initial * (1 + net_ret) ** years
-        ax.plot(years, wealth, color=color, lw=1.8,
+        lw = 2.4 if fee == 0.0005 else 1.6
+        ax.plot(years, wealth, color=color, lw=lw,
                 linestyle=ls, label=label)
+        terminal_vals.append((wealth[-1], color, label))
+
+    # Right-edge terminal value labels (extend xlim to make room)
+    ax.set_xlim(0, 24)
+    for i, (val, color, label) in enumerate(terminal_vals):
+        short = label.split("\n")[0]   # first line only, e.g. "Passive index"
+        ax.text(20.4, val, f"{val:.0f}", color=color,
+                fontsize=7, va="center", fontweight="bold")
 
     ax.set_xlabel("Years", labelpad=8)
     ax.set_ylabel("Portfolio value (start = 100)", labelpad=8)
