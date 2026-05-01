@@ -105,6 +105,8 @@ show2("fig_bubble_drawdowns.png")
 
 ## The three questions a sound investment view must answer
 
+These structural pressures — benchmark gravity, the profitability of crowded trades in the short term, and the difficulty of distinguishing early from wrong — make clear why sound investment work is so difficult to sustain even among skilled practitioners. The failure is rarely analytical incompetence. It is the absence of a complete thesis that holds up not just on the day the position is initiated but through the conditions that will test it.
+
 Most investment work fails in one of two ways. The first is to rely too heavily on valuation. The second is to rely too heavily on narrative.
 
 Valuation is necessary but insufficient as a near-term guide. Cheap assets can remain cheap when the market is focused on a risk that a normalized earnings framework does not capture. The long-horizon evidence supports the idea that starting valuation matters for subsequent returns, but that is very different from saying valuation provides a clean short-run timing signal. This is the central lesson of Campbell and Shiller's work on the cyclically adjusted price-to-earnings ratio — CAPE, defined as the current price divided by the ten-year average of real earnings: the correlation between CAPE and ten-year subsequent returns is informative at long horizons but nearly useless at short ones [@campbell1998].

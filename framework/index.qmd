@@ -13,21 +13,11 @@ It draws on work from Fama, Cochrane, Campbell and Shiller, Ilmanen, Asness and 
 
 ## Structure
 
-Seven sections build on each other toward a single destination: a documented systematic strategy with an honest account of what it does, what it earns, and where it is likely to fail.
+The framework begins with prices — what they are, why they embed expectations rather than reflect value directly, and how crowd dynamics can drive them far from any fundamental anchor. From there it asks whether that complexity can be turned into a consistent edge, and concludes that it rarely can at the aggregate level, though analytical work still earns its place in specific and identifiable ways.
 
-**Section 1** establishes what prices are, why they embed expectations rather than reflect value directly, and how crowd dynamics can drive prices far from any reasonable fundamental anchor.
+The middle sections build the constructive case: where returns actually come from, how to combine them into a portfolio that survives the conditions it will encounter, and how to estimate what that portfolio should earn from its current starting point rather than from a historical average. The final section before the strategy addresses the organizational hierarchy — core allocation comes first, active additions require explicit justification, and conviction under adversity is as important as the analytical work that preceded the allocation.
 
-**Section 2** examines how investors try to form an edge, why most signals decay after discovery, and where analytical work still adds genuine value despite the structural difficulty of persistent outperformance.
-
-**Section 3** develops a taxonomy of return sources — market beta, systematic factor premia, and alpha — and connects it to the methods that attempt to harvest those sources more deliberately.
-
-**Section 4** addresses portfolio construction: how exposures should be sized and combined, why diversification is a structural property rather than a position count, and why path risk matters as much as terminal return.
-
-**Section 5** grounds expected return estimation in observable arithmetic — starting valuation, current carry, and regime conditioning — rather than in historical averages or narrative optimism.
-
-**Section 6** addresses portfolio organization: strategic allocation comes first, active programs require explicit justification against a rigorous passive baseline, and the failure modes of core-plus-active structures matter as much as their theoretical properties.
-
-**Section 7** applies the framework to the ES Core Relative Allocation — a systematic futures strategy deployed live on Darwinex Zero — presenting backtest evidence, robustness analysis, regime decomposition, and live track record against the standards the preceding sections established.
+The seventh section applies all of this to a specific strategy. It documents what the strategy does, what the backtest evidence shows across different parameter configurations and macro regimes, and what the early live track record on Darwinex Zero can and cannot yet tell us. The standards against which the strategy is evaluated are the ones the preceding sections established — not retrospectively, but by design.
 
 ## The connected strategy
 

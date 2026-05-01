@@ -89,7 +89,7 @@ show("fig_factor_table.png")
 
 The return source taxonomy developed in this section changes how a portfolio should be designed in three specific ways.
 
-First, it separates what can be harvested cheaply from what requires genuine edge. Broad market beta is available at near-zero cost through index funds. Factor premia are available at modest cost through rules-based strategies. True alpha, if it exists, requires differentiated insight and careful implementation. A portfolio that pays active management fees for what turns out to be beta and factor exposure has made a category error that the taxonomy makes visible.
+First, it separates what can be harvested cheaply from what requires genuine edge. Broad market beta is available at near-zero cost through index funds / ETFs. Factor premia are available at modest cost through rules-based strategies and ETFs too. True alpha, if it exists, requires differentiated insight and careful implementation. A portfolio that pays active management fees for what turns out to be beta and factor exposure has made a category error that the taxonomy makes visible.
 
 Second, it clarifies what discomfort is attached to each return source. Every premium in the table above is earned through a specific form of discomfort — drawdown, illiquidity, benchmark-relative underperformance, or correlation to recession. Understanding which form of discomfort a portfolio is accepting, and whether that was consciously chosen or merely inherited, is prerequisite for honest portfolio design.
 
