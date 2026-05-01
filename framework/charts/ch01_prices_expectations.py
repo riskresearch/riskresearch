@@ -139,24 +139,33 @@ def chart_return_decomposition(df: pd.DataFrame) -> None:
     ax.plot(
         x, decomp["Total"].values.astype(float),
         "D", color=COLORS["total"],
-        markersize=7, zorder=5, label="Total nominal return",
+        markersize=8, zorder=10, label="Total nominal return",
+        markeredgecolor="white", markeredgewidth=1.2,
     )
 
     # -------------------------------------------------------
     # Annotate each segment with its value.
-    # Positive segments may be partially covered by a subsequent
-    # negative component (e.g. 1966-1981 multiple change overlays
-    # the inflation band).  Cap the visible top of each positive
-    # segment by summing any later negatives in the same column so
-    # the label lands inside the actually-visible portion.
+    # A subsequent negative component may overlap a positive segment
+    # (e.g. 1966-1981: multiple change -5.2% draws a downward bar
+    # that covers the top of the inflation band).  For each positive
+    # segment we check every later negative bar for *spatial* overlap
+    # and cap the visible top accordingly, so labels land inside the
+    # actually-visible portion of the colour band.
     # -------------------------------------------------------
     vals_matrix = np.array(
         [decomp[comp].values.astype(float) for comp in components]
     )  # shape: (n_components, n_bars)
 
-    bottom2 = np.zeros(len(decomp))
+    # Precompute cumulative bottoms: cum_bot[ci, bar] = sum(vals[0:ci, bar])
+    n_comp = len(components)
+    n_bars = len(decomp)
+    cum_bot = np.zeros((n_comp + 1, n_bars))
+    for ci in range(n_comp):
+        cum_bot[ci + 1] = cum_bot[ci] + vals_matrix[ci]
+
+    bottom2 = np.zeros(n_bars)
     for ci, (comp, color) in enumerate(zip(components, comp_colors)):
-        vals = decomp[comp].values.astype(float)
+        vals = vals_matrix[ci]
         for i, (val, bot) in enumerate(zip(vals, bottom2)):
             if abs(val) < 0.4:
                 bottom2[i] += val
@@ -165,15 +174,18 @@ def chart_return_decomposition(df: pd.DataFrame) -> None:
             x_center = x[i]
 
             if val >= 0:
-                # Visible top is capped by any subsequent negative bars
-                future_neg = sum(
-                    min(vals_matrix[cj, i], 0)
-                    for cj in range(ci + 1, len(components))
-                )
                 seg_bot_v = bot
-                seg_top_v = max(bot, bot + val + future_neg)
-                seg_mid   = (seg_bot_v + seg_top_v) / 2
-                seg_h     = seg_top_v - seg_bot_v
+                seg_top_v = bot + val
+                # Cap visible top: only when a later negative bar spatially overlaps
+                for cj in range(ci + 1, n_comp):
+                    v_j = vals_matrix[cj, i]
+                    if v_j < 0:
+                        neg_top = cum_bot[cj,     i]   # where neg bar starts (top)
+                        neg_bot = cum_bot[cj + 1, i]   # where neg bar ends   (bottom)
+                        if neg_bot < seg_top_v and neg_top > seg_bot_v:
+                            seg_top_v = max(seg_bot_v, min(seg_top_v, neg_bot))
+                seg_mid = (seg_bot_v + seg_top_v) / 2
+                seg_h   = seg_top_v - seg_bot_v
             else:
                 seg_top_v = bot
                 seg_bot_v = bot + val
