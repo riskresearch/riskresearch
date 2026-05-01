@@ -21,3 +21,4 @@ strategy/
 # Large data files
 framework/data/shiller_ie_data.xls
 framework/data/BAMLH0A0HYM2.csv
+/.quarto/
