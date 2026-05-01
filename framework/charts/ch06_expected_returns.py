@@ -146,23 +146,76 @@ def chart_regime_decomposition(df: pd.DataFrame) -> None:
 
     for comp, color in zip(components, comp_colors):
         vals = decomp[comp].values.astype(float)
-        bars = ax.bar(x, vals, bottom=bot, color=color,
-                      label=comp, width=0.55,
-                      edgecolor="white", linewidth=0.5)
-        for rect, val, b in zip(bars, vals, bot):
-            if abs(val) > 0.5:
-                ax.text(
-                    rect.get_x() + rect.get_width() / 2,
-                    b + val / 2,
-                    f"{val:.1f}%",
-                    ha="center", va="center",
-                    fontsize=7.5, color="white", fontweight="bold",
-                )
+        ax.bar(x, vals, bottom=bot, color=color,
+               label=comp, width=0.55,
+               edgecolor="white", linewidth=0.5)
         bot = bot + vals
 
     ax.plot(x, decomp["Total"].values.astype(float),
-            "D", color=COLORS["total"], markersize=7,
-            zorder=5, label="Total nominal return")
+            "D", color=COLORS["total"], markersize=8,
+            zorder=10, label="Total nominal return",
+            markeredgecolor="white", markeredgewidth=1.2)
+
+    # -------------------------------------------------------
+    # Label annotation — same spatial-overlap logic as ch01.
+    # Cap each positive segment's visible top by any subsequent
+    # negative bar that spatially overlaps it, so labels land
+    # inside the actually-visible colour band.
+    # -------------------------------------------------------
+    vals_matrix = np.array(
+        [decomp[comp].values.astype(float) for comp in components]
+    )
+    n_comp = len(components)
+    n_bars = len(decomp)
+
+    cum_bot2 = np.zeros((n_comp + 1, n_bars))
+    for ci in range(n_comp):
+        cum_bot2[ci + 1] = cum_bot2[ci] + vals_matrix[ci]
+
+    bottom2 = np.zeros(n_bars)
+    for ci, (comp, color) in enumerate(zip(components, comp_colors)):
+        vals = vals_matrix[ci]
+        for i, (val, bot_i) in enumerate(zip(vals, bottom2)):
+            if abs(val) <= 0.5:
+                bottom2[i] += val
+                continue
+
+            x_center = x[i]
+
+            if val >= 0:
+                seg_bot_v = bot_i
+                seg_top_v = bot_i + val
+                for cj in range(ci + 1, n_comp):
+                    v_j = vals_matrix[cj, i]
+                    if v_j < 0:
+                        neg_top = cum_bot2[cj,     i]
+                        neg_bot = cum_bot2[cj + 1, i]
+                        if neg_bot < seg_top_v and neg_top > seg_bot_v:
+                            seg_top_v = max(seg_bot_v, min(seg_top_v, neg_bot))
+                seg_mid = (seg_bot_v + seg_top_v) / 2
+                seg_h   = seg_top_v - seg_bot_v
+            else:
+                seg_top_v = bot_i
+                seg_bot_v = bot_i + val
+                seg_mid   = (seg_bot_v + seg_top_v) / 2
+                seg_h     = seg_top_v - seg_bot_v
+
+            if seg_h >= 0.8:
+                ax.text(x_center, seg_mid, f"{val:.1f}%",
+                        ha="center", va="center",
+                        fontsize=7.5, color="white",
+                        fontweight="bold", zorder=10)
+            else:
+                offset_dir = 1 if val >= 0 else -1
+                ax.text(x_center,
+                        seg_mid + offset_dir * (seg_h * 0.5 + 0.25),
+                        f"{val:.1f}%",
+                        ha="center",
+                        va="bottom" if val >= 0 else "top",
+                        fontsize=7.0, color="#333333",
+                        fontweight="bold", zorder=10)
+
+        bottom2 = bottom2 + vals
     ax.axhline(0, color="#999999", lw=0.8)
     ax.set_xticks(x)
     ax.set_xticklabels(decomp.index, fontsize=9)
