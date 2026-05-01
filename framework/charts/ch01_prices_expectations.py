@@ -143,11 +143,19 @@ def chart_return_decomposition(df: pd.DataFrame) -> None:
     )
 
     # -------------------------------------------------------
-    # Annotate each segment with its value
-    # Use a fresh pass with correct cumulative bottom tracking
+    # Annotate each segment with its value.
+    # Positive segments may be partially covered by a subsequent
+    # negative component (e.g. 1966-1981 multiple change overlays
+    # the inflation band).  Cap the visible top of each positive
+    # segment by summing any later negatives in the same column so
+    # the label lands inside the actually-visible portion.
     # -------------------------------------------------------
+    vals_matrix = np.array(
+        [decomp[comp].values.astype(float) for comp in components]
+    )  # shape: (n_components, n_bars)
+
     bottom2 = np.zeros(len(decomp))
-    for comp, color in zip(components, comp_colors):
+    for ci, (comp, color) in enumerate(zip(components, comp_colors)):
         vals = decomp[comp].values.astype(float)
         for i, (val, bot) in enumerate(zip(vals, bottom2)):
             if abs(val) < 0.4:
@@ -155,14 +163,24 @@ def chart_return_decomposition(df: pd.DataFrame) -> None:
                 continue
 
             x_center = x[i]
-            # Visual top and bottom of this segment
-            seg_top = bot + max(val, 0)
-            seg_bot = bot + min(val, 0)
-            seg_mid = (seg_top + seg_bot) / 2
-            seg_h   = seg_top - seg_bot
+
+            if val >= 0:
+                # Visible top is capped by any subsequent negative bars
+                future_neg = sum(
+                    min(vals_matrix[cj, i], 0)
+                    for cj in range(ci + 1, len(components))
+                )
+                seg_bot_v = bot
+                seg_top_v = max(bot, bot + val + future_neg)
+                seg_mid   = (seg_bot_v + seg_top_v) / 2
+                seg_h     = seg_top_v - seg_bot_v
+            else:
+                seg_top_v = bot
+                seg_bot_v = bot + val
+                seg_mid   = (seg_bot_v + seg_top_v) / 2
+                seg_h     = seg_top_v - seg_bot_v
 
             if seg_h >= 0.8:
-                # Enough room — label inside in white
                 ax.text(
                     x_center, seg_mid,
                     f"{val:.1f}%",
@@ -171,7 +189,6 @@ def chart_return_decomposition(df: pd.DataFrame) -> None:
                     fontweight="bold", zorder=10,
                 )
             else:
-                # Too narrow — label just outside in dark
                 offset_dir = 1 if val >= 0 else -1
                 ax.text(
                     x_center,
