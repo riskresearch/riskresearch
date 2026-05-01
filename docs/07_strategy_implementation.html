@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A strategy that performs well only at its exact design parameters is not a robust investment program but a result specific to one set of choices. Two complementary analyses test whether this strategy holds beyond its baseline configuration.</p>
 <p>A one-at-a-time sensitivity analysis tested each of the six key design parameters across five values ranging from −50% to +50% of the baseline. The strategy’s Sharpe ratio remained above 0.75 for four of the six parameters across the full tested range. Two parameters — the EMA smoothing span and the no-trade band — showed essentially no sensitivity, meaning those choices can be varied substantially without affecting performance. The most sensitive parameter was the signal lookback window, which showed a clear directional pattern: shorter windows consistently outperformed longer ones.</p>
 <p>The Monte Carlo analysis then tested 50 randomly sampled combinations across the full six-dimensional parameter space simultaneously, evaluated over a common analysis start date to ensure fair comparison. The Sharpe threshold of 0.70 was chosen as a conservative minimum — it represents a level at which the strategy would still produce meaningful risk-adjusted return well above the passive equity benchmark’s Sharpe of 0.53, justifying the operational complexity of a futures-based program. 52% of combinations exceeded this threshold, and the baseline configuration sat at the 98th percentile of the distribution.</p>
-<div id="c9d8de8f" class="cell" data-execution_count="2">
+<div id="32c5cec9" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -261,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>The most important robustness finding is the dominant sensitivity to the signal lookback window — correlation of −0.77 between window length and Sharpe across the Monte Carlo sample. This is the parameter where the current baseline may not be optimal, and a shorter window is a candidate for future revision once the live deployment provides sufficient out-of-sample evidence.</p>
-<div id="35a4a94e" class="cell" data-execution_count="3">
+<div id="57fe2836" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -275,12 +275,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="regime-decomposition" class="level2">
 <h2 class="anchored" data-anchor-id="regime-decomposition">Regime decomposition</h2>
 <p>The strategy’s performance varies substantially across macro regimes. Each trading day in the backtest is classified into one of four regimes using publicly available FRED data: Equity Bear (trailing 12-month S&amp;P 500 return below −10% or VIX above 30, taking priority over all other conditions), Inflation (CPI year-on-year above 4% and rising), Equity Bull (trailing 12-month return above 15%), and Neutral (all remaining days). The priority ordering ensures that bear conditions are correctly identified even when they coincide with elevated inflation.</p>
-<div id="1b1b7113" class="cell" data-execution_count="4">
+<div id="973a20ea" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="07_strategy_implementation_files/figure-html/cell-5-output-1.png" width="614" height="499" class="figure-img"></p>
-<figcaption>Macro regime classification across the backtest period, 2003–2026. Top panel: strategy equity curve with regime shading. Panels below show the three classification indicators: S&amp;P 500 12-month return (note: FRED SP500 series covers only recent history, explaining the gap in the second panel before approximately 2017), VIX, and CPI year-on-year. Source: FRED (SP500, VIXCLS, CPIAUCSL), author calculations.</figcaption>
+<figcaption>Macro regime classification across the backtest period, 2003–2026. Top panel: strategy equity curve with regime shading. Panels below show the three classification indicators: market factor 12-month return (Fama-French MktRF + RF, monthly, full history since 1926), VIX, and CPI year-on-year. Source: Fama-French Data Library, FRED (VIXCLS, CPIAUCSL), author calculations.</figcaption>
 </figure>
 </div>
 </div>
@@ -338,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>The strategy earns its return across two complementary regimes. The Neutral regime — 65% of all trading days — produces a Sharpe of 0.90 and a CAGR of 19.9%, forming the backbone of compounded long-run performance. Equity Bull periods produce an exceptional Sharpe of 3.27 as the dynamic leverage mechanism amplifies equity participation during strong trending conditions. Together these two regimes account for 79% of the sample and all positive contribution.</p>
 <p>The Equity Bear regime is the strategy’s primary structural weakness. During the 657 bear-regime days the strategy lost at an annualized rate of −39.1% with a Sharpe of −2.03. This is a direct consequence of the backward-looking signal design: the allocation mechanism requires sustained relative underperformance before it reduces equity exposure materially. In sharp, rapid bear markets — the 2020 COVID episode is the clearest example — the strategy experiences full equity drawdown before the signal has time to rotate. This is not a parameter optimization problem. It is a structural feature of any signal that measures performance over a multi-month lookback window. An investor in this strategy must accept that bear market losses are the price of sustained equity participation across the 79% of conditions when the strategy is designed to perform.</p>
-<div id="56723d99" class="cell" data-execution_count="5">
+<div id="c5ad6264" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

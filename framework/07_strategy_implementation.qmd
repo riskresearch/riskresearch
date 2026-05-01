@@ -98,7 +98,7 @@ The strategy's performance varies substantially across macro regimes. Each tradi
 ```{python}
 #| echo: false
 #| warning: false
-#| fig-cap: "Macro regime classification across the backtest period, 2003–2026. Top panel: strategy equity curve with regime shading. Panels below show the three classification indicators: S&P 500 12-month return (note: FRED SP500 series covers only recent history, explaining the gap in the second panel before approximately 2017), VIX, and CPI year-on-year. Source: FRED (SP500, VIXCLS, CPIAUCSL), author calculations."
+#| fig-cap: "Macro regime classification across the backtest period, 2003–2026. Top panel: strategy equity curve with regime shading. Panels below show the three classification indicators: market factor 12-month return (Fama-French MktRF + RF, monthly, full history since 1926), VIX, and CPI year-on-year. Source: Fama-French Data Library, FRED (VIXCLS, CPIAUCSL), author calculations."
 show("fig_regime_timeline.png", "regime")
 ```
 
