@@ -100,13 +100,19 @@ def chart_fee_drag() -> None:
 
     # Right: fee drag in dollar terms
     ax2 = axes[1]
-    passive_wealth = initial * (1 + gross_ret - 0.0005) ** years
+    passive_label, passive_fee, passive_color, passive_ls = scenarios[0]
+    passive_wealth = initial * (1 + gross_ret - passive_fee) ** years
+
+    # Passive baseline explicitly at zero drag
+    ax2.plot(years, np.zeros_like(years, dtype=float),
+             color=passive_color, lw=2.4, linestyle=passive_ls,
+             label=passive_label)
 
     for label, fee, color, ls in scenarios[1:]:
-        net_ret      = gross_ret - fee
-        wealth       = initial * (1 + net_ret) ** years
-        drag         = passive_wealth - wealth
-        ax2.plot(years, drag, color=color, lw=1.8,
+        net_ret = gross_ret - fee
+        wealth  = initial * (1 + net_ret) ** years
+        drag    = passive_wealth - wealth
+        ax2.plot(years, drag, color=color, lw=1.6,
                  linestyle=ls, label=label)
 
     ax2.set_xlabel("Years", labelpad=8)
@@ -115,7 +121,6 @@ def chart_fee_drag() -> None:
     ax2.set_title("Fee drag relative to passive baseline\n"
                   "Cumulative cost per 100 invested", pad=10)
     ax2.legend(fontsize=8, framealpha=0.5)
-    ax2.axhline(0, color="#cccccc", lw=0.8)
     ax2.xaxis.set_major_locator(mticker.MultipleLocator(5))
 
     fig.suptitle(
