@@ -11,14 +11,11 @@ env/
 # Quarto intermediates
 .quarto/
 **/*.quarto_ipynb
-
-# Private research
-ongoingresearch/
-
-# Strategy — private
-strategy/
-
-# Large data files
-framework/data/shiller_ie_data.xls
-framework/data/BAMLH0A0HYM2.csv
 /.quarto/
+
+# Private — not public
+research/
+backtest/
+deployment/
+ongoingresearch/
+outputs/
